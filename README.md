@@ -10,6 +10,6 @@ Implement five APIs to give choices to the user.
 
 With these APIs user will be able to find the most affordable way to get to a desired destination in Austin.
 We recommend the user to use environmentally friendly vehicles on sunny days.
-The bike rates are estimated with google map data and the rates provided by the scooter rental companies.
+The bike rates are estimated with google map data and the rates provided by the scooter rental companies. 
 
 
