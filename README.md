@@ -2,11 +2,13 @@ This is an application that will help a user select the most optimal transportat
 
 Implement five APIs to give choices to the user.
 
-*Uber API
-*Lyft API
+*Uber API (https://developer.uber.com/docs/riders/references/api)
+*Lyft API (https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
 *BikeRadar API
-*Open Weather API
+*Open Weather API (DC gen w/name destinATX) - b71526ae83f488d396f36bb43cb91ffb
 *Google Maps API
+
+GitHub URL:  https://destinatx.github.io/Project-1/
 
 With these APIs user will be able to find the most affordable way to get to a desired destination in Austin.
 We recommend the user to use environmentally friendly vehicles on sunny days.
