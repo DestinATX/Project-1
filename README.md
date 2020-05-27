@@ -2,8 +2,13 @@ This is an application that will help a user select the most optimal transportat
 
 Implement five APIs to give choices to the user.
 
-[] Uber API (https://developer.uber.com/docs/riders/references/api)
-[] Lyft API (https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
+[] Uber API same key as Lyft - all from Rapid - REQUIRES TOKEN
+            (product info, est price range, missing duration)
+            (https://developer.uber.com/docs/riders/references/api)
+[x] Lyft API 422d5dfd16mshf1d3696de0ce7f2p15e944jsn410117f8544f
+            https://rapidapi.com/volodimir.kudriachenko/api/Lyft?       endpoint=apiendpoint_d6a90130-f966-11e7-aa9e-7fdbe96fd9e9estimateRideCost
+            (estimateRideCost)(free API)
+            (https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
 [] Socrata (bikes) API
             https://dev.socrata.com/foundry/data.edmonton.ca/vq44-ni9f/embed
 [] BikeRadar API (MM requested 5/25/20)
