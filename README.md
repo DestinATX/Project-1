@@ -5,7 +5,7 @@ Implement five APIs to give choices to the user.
 _______________________________________________________________________________________________
 NEXT STEPS:
 5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
-Decisions:  Google Maps & Distance Matrix + OpenWeather APIs; Materialize for CSS
+Decisions:  Google Maps & Distance Matrix + OpenWeather APIs; Bootstrap replacement will be Materialize https://materializecss.com/
 Next Meeting: Agile Update at 8pm Wednesday (5/27)
 Assignments - return API how-to for cost, duration, distance for Google APIs
   1.  Google Maps API - Daniel & Adrian 
