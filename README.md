@@ -5,7 +5,8 @@ Implement five APIs to give choices to the user.
 *Uber API (https://developer.uber.com/docs/riders/references/api)
 *Lyft API (https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
 *BikeRadar API
-*Open Weather API (DC gen w/name destinATX) - b71526ae83f488d396f36bb43cb91ffb
+*Open Weather API - b71526ae83f488d396f36bb43cb91ffb (https://home.openweathermap.org/api_keys)
+                                             (DC gen w/name destinATX, free 1,000,000 calls/mo)
 *Google Maps API
 
 GitHub URL:  https://destinatx.github.io/Project-1/
