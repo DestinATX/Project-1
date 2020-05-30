@@ -62,8 +62,9 @@ How to use: Get to the Documentation and you will have access to API LOCATIONS &
 
 [x] (CapMetro Austin) Service Alerts, Trip Updates, Vehicle Positions "https://data.austintexas.gov/browse?q=json&sortBy=relevance"
 
-[x](YELP) Yelp API - FUSION API  
-         API KEY Marlon
+[x](YELP) Yelp API - FUSION API
+
+        API KEY Marlon
         "LWQKKIC6WZLlwyI7-Pg9pE02R0wCWEQtyFS7Y3hPAu-PEbUHgvd9P9munA-Ozw5qz4XsU-RlmxcW9o8bzippVqsR-MUSpI5ZOeEs4J25asF8SJYQZZNbZFefcZPSXnYx"
 
         Client ID Marlon
@@ -77,6 +78,9 @@ How to use: Get to the Documentation and you will have access to API LOCATIONS &
         Example used: To get data using the url I got the business ID from the Chrome INSPECT tool in the The Picnic Austin which is a food truck.
         I pasted the Business Id: vLKgesyq-yEfpzeAFgPorQ to Postman after the Url https://api.yelp.com/v3/businesses/
         got a response with all the information for selected food truck in JSON.
+
+        Remember to ADD parameters*** in our case it would be KEY : 'term' VALUE : 'foodtrucks' KEY : 'location' VALUE : 'austin'
+
 
 
         https://www.yelp.com/developers/documentation/v3/business
