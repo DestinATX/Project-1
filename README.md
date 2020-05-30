@@ -1,7 +1,106 @@
-This is an application that will help a user select the most optimal transportation method to get to a desired destination.
+destinATX
 
-Implement five APIs to give choices to the user.
+Designed for users of all ages to determine the most optimal transportation method in Austin, TX by allowing them to shop options and compare rates, duration, and time to service.
+_______________________________________________________________________________________________
 
+USER STORIES
+_______________________________________________________________________________
+Ask a friend/relative to give us feedback to answer user type, goal of app effectiveness, and benefit (1 video clip or words – need 2-3)
+
+_______________________________________________________________________________
+
+ACCEPTANCE CRITERIA
+_______________________________________________________________________________
+•	Given I want to travel from point A to B when I get destinATX, I am able to compare prices and there is enough information to help me decide if I want to walk, ride, or peddle.
+•	When I do some action I get……
+•	Then I expect some result……
+•	
+
+_______________________________________________________________________________
+
+BUGS and RABBIT HOLES
+_______________________________________________________________________________
+what went wrong and how me managed – to be added
+audit trail information would be helpful, diagrams, screen shots, notes, etc.
+
+_______________________________________________________________________________
+
+RESOURCES and TECH STACK
+_______________________________________________________________________________
+GitHub used to leverage project management, work flow, and application storage.
+Frontend:  HTML. CSS. JavaScript, JQuery, Materialize Bootstrap, AJAX, JSON	
+Backend:  ???
+Pattern:  Model View Controller takes to website side with links - NEED?
+
+Sample code of CSS, etc.
+
+_______________________________________________________________________________
+
+TEAM MANAGEMENT
+_______________________________________________________________________________
+ 
+Adrian Palacios             Changyeon (Daniel) Hong
+Full-Stack Engineer         Full-Stack Engineer
+adrianpalacios33@yahoo.com  hongchangyeon@gmail.com
+cell: (956) 252-7270        cell: (737) 218-3825
+   
+Diane Candler               Marlon Mora
+Full-Stack Engineer         Full-Stack Engineer
+dianedcandler@gmail.com     
+cell:  (512) 964-9473       cell:
+        
+Review the team’s work on our GitHub Project Board at 
+
+_______________________________________________________________________________
+
+VALUE ADD PROPOSAL
+_______________________________________________________________________________
+add content here
+
+_______________________________________________________________________________
+
+DEMO
+_______________________________________________________________________________
+Screen Shots – use Zoom to video
+
+_______________________________________________________________________________
+
+MVP
+_______________________________________________________________________________
+Phase One - select APIs and implement simple user interface.
+Phase Two - get data flowing, filtered, and uploaded to firebase.
+Phase Three - regine user interface while evolving the controller.
+Phase Four - ingetrate MVC.
+_______________________________________________________________________________
+
+UI DESIGN
+_______________________________________________________________________________
+images - storyboarding
+verbiage
+
+_______________________________________________________________________________
+
+Uber and Lyft
+_______________________________________________________________________________
+verbiage
+
+_______________________________________________________________________________
+
+Bikes
+_______________________________________________________________________________
+verbiage
+
+_______________________________________________________________________________
+
+Release 2.0
+_______________________________________________________________________________
+Enhancements we want to see in the next version:
+•	Add API links to enhance bike data
+•	
+
+5/28/20 - Met 6:30-10:00pm 
+Met with class to review project expectation with instructor then split into teams at 7pm.
+Adrian and Diane worked on readme while Marlon and Daniel worked on APIs.
 _______________________________________________________________________________________________
 NEXT STEPS:
 5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
@@ -34,7 +133,7 @@ ____________________________API DATA____________________________________________
             (https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
 [] Socrata (bikes) API
             https://dev.socrata.com/foundry/data.edmonton.ca/vq44-ni9f/embed
-[] (BBikeRadar API (MM requested 5/25/20)
+[] (BBikeRadar API (MM requested 5/25/20) - no updates 5/28
 [x] (Back-up) CityBikes 422d5dfd16mshf1d3696de0ce7f2p15e944jsn410117f8544f 
              (https://rapidapi.com/eskerda/api/citybikes)(free, unlimited) (#bikes/city)
 [x] Open Weather API - b71526ae83f488d396f36bb43cb91ffb 
@@ -53,6 +152,9 @@ GitHub URL:  https://destinatx.github.io/Project-1/
 GitHub:  https://github.com/DestinATX/Project-1/settings
 
 * * * * * * * End of 5/26 Update * * * * * * * * * * * * * * * * * * * * * * * * 
+
+5/28/2020
+APIs (min)
 
 
 With these APIs user will be able to find the most affordable way to get to a desired destination in Austin.
