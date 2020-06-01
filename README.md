@@ -81,6 +81,8 @@ How to use: Get to the Documentation and you will have access to API LOCATIONS &
 
         Remember to ADD parameters*** in our case it would be KEY : 'term' VALUE : 'foodtrucks' KEY : 'location' VALUE : 'austin'
 
+        Yelp Fusion API - "https://python.gotrained.com/yelp-fusion-api-tutorial/"
+
 
 
         https://www.yelp.com/developers/documentation/v3/business
