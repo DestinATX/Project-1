@@ -10,16 +10,25 @@ function initMap() {
   getDirections();  
 }
 
+// by using cors-anywhere, CO
 
   function getDirections() {
-      var queryURL ="https://maps.googleapis.com/maps/api/directions/json?origin=10098+Red+Sage+Dr&destination=Garden+of+the+gods&mode=transit&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
+      var queryURL ="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin=10098+Red+Sage+Dr&destination=Garden+of+the+gods&mode=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
       $.ajax({
         url: queryURL,
         method: "GET",
-        datatype: "JSONP"
+        dataType: "json",
+        header: {
+            'Access-Control-Allow-Origin':'*'
+        }
       }).then(function(response) {
         console.log(response);
       });
+
+    // $.get("https://maps.googleapis.com/maps/api/directions/json?origin=10098+Red+Sage+Dr&destination=Garden+of+the+gods&mode=transit&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk").done(function (data) {
+    // console.log(data);
+
+
     };
 
 
