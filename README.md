@@ -1,107 +1,92 @@
-destinATX
+FoodTrucksATX
+Designed for users of all ages to determine the available food trucks in the user’s desired area of Austin, TX then allowing them to choose to walk, bike, take public transit, or personal car based on their desired time to arrival.
 
-Designed for users of all ages to determine the most optimal transportation method in Austin, TX by allowing them to shop options and compare rates, duration, and time to service.
-_______________________________________________________________________________________________
-
-USER STORIES
-_______________________________________________________________________________
+User Stories
 Ask a friend/relative to give us feedback to answer user type, goal of app effectiveness, and benefit (1 video clip or words – need 2-3)
 
-_______________________________________________________________________________
+Acceptance Criteria
+•	Given I am within the City of Austin in search of a food truck, I am able to find options in the area of town that I wish to target.
+•	If I desire a particular cuisine, the FoodTrucksATX app allows me to search by cuisine with results provided for desired mode of transportation.
+•	Given options to walk, bike, take public transit, or personal car, I am able to select the desired food trucks in that vacinity.
+•	When I select the option to walk or bike, weather conditions presented.
+•	Then I expect the address, directions, map, duration of the trip, and short bio on the food truck I select.
 
-ACCEPTANCE CRITERIA
-_______________________________________________________________________________
-•	Given I want to travel from point A to B when I get destinATX, I am able to compare prices and there is enough information to help me decide if I want to walk, ride, or peddle.
-•	When I do some action I get……
-•	Then I expect some result……
-•	
+Bugs and Rabbit Holes
+-	Began defining “destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX
+-	Used proxy to fix CORS error which was blocking data from Google Direction API
+o	 3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works	
 
-_______________________________________________________________________________
-
-BUGS and RABBIT HOLES
-_______________________________________________________________________________
-what went wrong and how me managed – to be added
 audit trail information would be helpful, diagrams, screen shots, notes, etc.
 
-_______________________________________________________________________________
-
-RESOURCES and TECH STACK
-_______________________________________________________________________________
+Resources and Tech Stack
 GitHub used to leverage project management, work flow, and application storage.
-Frontend:  HTML. CSS. JavaScript, JQuery, Materialize Bootstrap, AJAX, JSON	
-Backend:  ???
-Pattern:  Model View Controller takes to website side with links - NEED?
-
+Frontend:  HTML. CSS, JavaScript, JQuery, AJAX, JSON	
+APIs:  Google Maps JavaScript, Google Directions, CORS Anywhere Yelp, OpenWeather, CityBikes
 Sample code of CSS, etc.
 
-_______________________________________________________________________________
-
-TEAM MANAGEMENT
-_______________________________________________________________________________
+Team Management
  
-Adrian Palacios             Changyeon (Daniel) Hong
-Full-Stack Engineer         Full-Stack Engineer
-adrianpalacios33@yahoo.com  hongchangyeon@gmail.com
-cell: (956) 252-7270        cell: (737) 218-3825
-   
-Diane Candler               Marlon Mora
-Full-Stack Engineer         Full-Stack Engineer
-dianedcandler@gmail.com     
-cell:  (512) 964-9473       cell:
-        
-Review the team’s work on our GitHub Project Board at 
+Adrian Palacios
+Full-Stack Engineer
+  linkedin.com/in/adrian-palacios-centraltexas/
+ adrianpalacios33@yahoo.com  (956) 252-7270
 
-_______________________________________________________________________________
+Changyeon (Daniel) Hong
+Full-Stack Engineer
+ linkedin.com/in/changyeon-hong-centraltexas/
+ hongchangyeon@gmail.com (737)218-3825
+Diane Candler
+Full-Stack Engineer
+  linkedin.com/in/diane-candler-centraltexas/
+  dianedcandler@gmail.com   (512)964-9473
 
-VALUE ADD PROPOSAL
-_______________________________________________________________________________
-add content here
+Marlon Mora
+Full-Stack Engineer
+  linkedin.com/in/dmarlon-mora-centraltexas/
+    marlonmora.ndr@gmail.com  (929)2296136
+ 
 
-<<<<<<< HEAD
----
+Review the team’s work on our GitHub  https://github.com/DestinATX/Project-1
 
-=======
-_______________________________________________________________________________
+Value Add Proposal
+TBD
 
-DEMO
-_______________________________________________________________________________
+Demo
 Screen Shots – use Zoom to video
 
-_______________________________________________________________________________
 
 MVP
-_______________________________________________________________________________
-Phase One - select APIs and implement simple user interface.
-Phase Two - get data flowing, filtered, and uploaded to firebase.
-Phase Three - regine user interface while evolving the controller.
-Phase Four - ingetrate MVC.
-_______________________________________________________________________________
+Phase One - select APIs and high-level product description
+Phase Two – Psuedo Code, StoryBoard, Set Project Goals and Responsibilities
+Phase Three - get data flowing and filtered
+Phase Four – Build HTML and CSS infrastructure using available data
+Phase Five – Develop user interface
+Phase Six – Finalize deliverables including readme, screen shots, user stories, etc.
 
-UI DESIGN
-_______________________________________________________________________________
+UI Design
+ 
 images - storyboarding
-verbiage
 
-_______________________________________________________________________________
+Google Maps API
+The Maps JavaScript API lets you customize maps with your own content and imagery for display on web pages and mobile devices.
 
-Uber and Lyft
-_______________________________________________________________________________
-verbiage
+Google Directions API
+With the Directions API, it is possible to access driving, cycling, walking and public transportation routing by using an HTTP request.
 
-_______________________________________________________________________________
+Yelps API
+Short description
 
-Bikes
-_______________________________________________________________________________
-verbiage
-
-_______________________________________________________________________________
+cors-anywhere
+This API enables cross-origin requests to anywhere.
 
 Release 2.0
-_______________________________________________________________________________
 Enhancements we want to see in the next version:
 •	Add API links to enhance bike data
-•	
+•	Add GEO Location
+•	Add Food Truck attributes such as rating, reviews, menus, etc.
 
+
+5/30/20 Met from 1-4pm worked on APIs to determine 
 5/28/20 - Met 6:30-10:00pm 
 Met with class to review project expectation with instructor then split into teams at 7pm.
 Adrian and Diane worked on readme while Marlon and Daniel worked on APIs.
