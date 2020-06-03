@@ -5,55 +5,54 @@ User Stories
 Ask a friend/relative to give us feedback to answer user type, goal of app effectiveness, and benefit (1 video clip or words – need 2-3)
 
 Acceptance Criteria
-•	Given I am within the City of Austin in search of a food truck, I am able to find options in the area of town that I wish to target.
-•	If I desire a particular cuisine, the FoodTrucksATX app allows me to search by cuisine with results provided for desired mode of transportation.
-•	Given options to walk, bike, take public transit, or personal car, I am able to select the desired food trucks in that vacinity.
-•	When I select the option to walk or bike, weather conditions presented.
-•	Then I expect the address, directions, map, duration of the trip, and short bio on the food truck I select.
+• Given I am within the City of Austin in search of a food truck, I am able to find options in the area of town that I wish to target.
+• If I desire a particular cuisine, the FoodTrucksATX app allows me to search by cuisine with results provided for desired mode of transportation.
+• Given options to walk, bike, take public transit, or personal car, I am able to select the desired food trucks in that vacinity.
+• When I select the option to walk or bike, weather conditions presented.
+• Then I expect the address, directions, map, duration of the trip, and short bio on the food truck I select.
 
 Bugs and Rabbit Holes
--	Began defining “destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX
--	Used proxy to fix CORS error which was blocking data from Google Direction API
-o	 3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works	
+
+- Began defining “destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX
+- Used proxy to fix CORS error which was blocking data from Google Direction API
+  o 3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works
 
 audit trail information would be helpful, diagrams, screen shots, notes, etc.
 
 Resources and Tech Stack
 GitHub used to leverage project management, work flow, and application storage.
-Frontend:  HTML. CSS, JavaScript, JQuery, AJAX, JSON	
-APIs:  Google Maps JavaScript, Google Directions, CORS Anywhere Yelp, OpenWeather, CityBikes
+Frontend: HTML. CSS, JavaScript, JQuery, AJAX, JSON
+APIs: Google Maps JavaScript, Google Directions, CORS Anywhere Yelp, OpenWeather, CityBikes
 Sample code of CSS, etc.
 
 Team Management
- 
+
 Adrian Palacios
 Full-Stack Engineer
-  linkedin.com/in/adrian-palacios-centraltexas/
- adrianpalacios33@yahoo.com  (956) 252-7270
+linkedin.com/in/adrian-palacios-centraltexas/
+adrianpalacios33@yahoo.com (956) 252-7270
 
 Changyeon (Daniel) Hong
 Full-Stack Engineer
- linkedin.com/in/changyeon-hong-centraltexas/
- hongchangyeon@gmail.com (737)218-3825
+linkedin.com/in/changyeon-hong-centraltexas/
+hongchangyeon@gmail.com (737)218-3825
 Diane Candler
 Full-Stack Engineer
-  linkedin.com/in/diane-candler-centraltexas/
-  dianedcandler@gmail.com   (512)964-9473
+linkedin.com/in/diane-candler-centraltexas/
+dianedcandler@gmail.com (512)964-9473
 
 Marlon Mora
 Full-Stack Engineer
-  linkedin.com/in/dmarlon-mora-centraltexas/
-    marlonmora.ndr@gmail.com  (929)2296136
- 
+linkedin.com/in/dmarlon-mora-centraltexas/
+marlonmora.ndr@gmail.com (929)2296136
 
-Review the team’s work on our GitHub  https://github.com/DestinATX/Project-1
+Review the team’s work on our GitHub https://github.com/DestinATX/Project-1
 
 Value Add Proposal
 TBD
 
 Demo
 Screen Shots – use Zoom to video
-
 
 MVP
 Phase One - select APIs and high-level product description
@@ -64,7 +63,7 @@ Phase Five – Develop user interface
 Phase Six – Finalize deliverables including readme, screen shots, user stories, etc.
 
 UI Design
- 
+
 images - storyboarding
 
 Google Maps API
@@ -81,22 +80,23 @@ This API enables cross-origin requests to anywhere.
 
 Release 2.0
 Enhancements we want to see in the next version:
-•	Add API links to enhance bike data
-•	Add GEO Location
-•	Add Food Truck attributes such as rating, reviews, menus, etc.
+• Add API links to enhance bike data
+• Add GEO Location
+• Add Food Truck attributes such as rating, reviews, menus, etc.
 
-
-5/30/20 Met from 1-4pm worked on APIs to determine 
-5/28/20 - Met 6:30-10:00pm 
+5/30/20 Met from 1-4pm worked on APIs to determine
+5/28/20 - Met 6:30-10:00pm
 Met with class to review project expectation with instructor then split into teams at 7pm.
 Adrian and Diane worked on readme while Marlon and Daniel worked on APIs.
-_______________________________________________________________________________________________
->>>>>>> a81647d211cb24fe33abb56ab40178a8dfd49a48
-NEXT STEPS:
-5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
-Decisions: Google Maps & Distance Matrix + OpenWeather APIs; Bootstrap replacement will be Materialize https://materializecss.com/
-Next Meeting: Agile Update at 8pm Wednesday (5/27)
-Assignments - return API how-to for cost, duration, distance for Google APIs
+
+---
+
+> > > > > > > a81647d211cb24fe33abb56ab40178a8dfd49a48
+> > > > > > > NEXT STEPS:
+> > > > > > > 5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
+> > > > > > > Decisions: Google Maps & Distance Matrix + OpenWeather APIs; Bootstrap replacement will be Materialize https://materializecss.com/
+> > > > > > > Next Meeting: Agile Update at 8pm Wednesday (5/27)
+> > > > > > > Assignments - return API how-to for cost, duration, distance for Google APIs
 
 1.  Google Maps API - Daniel & Adrian
 2.  Google Distance Matrix - Marlon & Diane (hint: shortest vs quickest route) + OpenWeather
@@ -125,13 +125,13 @@ https://rapidapi.com/volodimir.kudriachenko/api/Lyft? endpoint=apiendpoint_d6a90
 (estimateRideCost)(free API but requires join Dev Group)
 (https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
 [] Socrata (bikes) API
-            https://dev.socrata.com/foundry/data.edmonton.ca/vq44-ni9f/embed
+https://dev.socrata.com/foundry/data.edmonton.ca/vq44-ni9f/embed
 [] (BBikeRadar API (MM requested 5/25/20) - no updates 5/28
-[x] (Back-up) CityBikes 422d5dfd16mshf1d3696de0ce7f2p15e944jsn410117f8544f 
-             (https://rapidapi.com/eskerda/api/citybikes)(free, unlimited) (#bikes/city)
-[x] Open Weather API - b71526ae83f488d396f36bb43cb91ffb 
-            (https://home.openweathermap.org/api_keys)
-            (DC gen w/name destinATX, free 1,000,000 calls/mo)
+[x](Back-up) CityBikes 422d5dfd16mshf1d3696de0ce7f2p15e944jsn410117f8544f
+(https://rapidapi.com/eskerda/api/citybikes)(free, unlimited) (#bikes/city)
+[x] Open Weather API - b71526ae83f488d396f36bb43cb91ffb
+(https://home.openweathermap.org/api_keys)
+(DC gen w/name destinATX, free 1,000,000 calls/mo)
 
 [x] (Back-up API for Maps) Here API ID “GXUq1dnJm5xYLW7Gksmj”
 API Key 9KP26Lrxitj2R0Hj_fEmFwn5ftZtatAENiYP2nEuOyc
@@ -174,6 +174,16 @@ How to use: Get to the Documentation and you will have access to API LOCATIONS &
 
 
         https://www.yelp.com/developers/documentation/v3/business
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. list 
+  2. list
+     * With some
+     * Sub bullets
+</details>
 
 Username : GitHub
 Password : Github
