@@ -1,26 +1,26 @@
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 30.270575, lng: -97.744214},
-    zoom: 8
+// var map;
+// function initMap() {
+//   map = new google.maps.Map(document.getElementById('map'), {
+//     center: {lat: 30.270575, lng: -97.744214},
+//     zoom: 8
 
 
-  });
+//   });
 
-  getDirections();  
-}
+//   getDirections();  
+// }
 
 
-  function getDirections() {
-      var queryURL ="https://maps.googleapis.com/maps/api/directions/json?origin=10098+Red+Sage+Dr&destination=Garden+of+the+gods&mode=transit&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
-      $.ajax({
-        url: queryURL,
-        method: "GET",
-        datatype: "JSONP"
-      }).then(function(response) {
-        console.log(response);
-      });
-    };
+//   function getDirections() {
+//       var queryURL ="https://maps.googleapis.com/maps/api/directions/json?origin=10098+Red+Sage+Dr&destination=Garden+of+the+gods&mode=transit&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
+//       $.ajax({
+//         url: queryURL,
+//         method: "GET",
+//         datatype: "JSONP"
+//       }).then(function(response) {
+//         console.log(response);
+//       });
+//     };
 
 
 

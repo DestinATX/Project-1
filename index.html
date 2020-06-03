@@ -19,47 +19,127 @@
 
  <title>Project-1: FoodTrucksATX</title>
  <!-- could add the background, currently has -->
- <style>
-  header{
-    background: url(assets/images.mapAustin.JPG);
-    background-size: cover;
-    background-position: center;
-    min-height: 1000px;
-  }
-  @media screen and (max-width: 670px){
-    header{
-      min-height: 500px;
-    }
-  }
-</style>
+
 </head>
 
 <body>
 
 <!-- Daniel added for APIs -->
-  <div id="map"></div>
+  <!-- <div id="map"></div> -->
 
   <!-- navbar use for logo and to return home/Welcome Page -->
-  <nav class="nav-wrapper transparent">
-    <div class="container">
-      <!-- this is for the logo in the navbar / has CSS for screen sizing -->
-      <a href="#" class="brand-logo">FoodTrucksATX</a>
-      <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-        <!-- will use this for take me home tab in navbar -->
-        <i class="material-icons">menu</i>
-      </a>
-    </div>
-  </nav>
-  <!-- photo / grid - Selection Page -->
+  <!-- this is for the logo in the navbar / has CSS for screen sizing -->
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper indigo">
+      <div class="container">
+        <a href="#" class="brand-logo">FoodTrucksATX</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+             <!-- weather icon, media, take me home, ??? in the navbar -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="">Take me Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Weather</a></li>
+          <li><a href="" class="btn white indigo-text">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
+<!-- Here is a card, no JavaScript to drive this-->
+<div class="container">
+  <h2>Cards</h2>
+  <div class="row">
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/curry.jpg" alt="">
+          <a href="" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Mango & Chickpea Curry</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="card-action">
+          <a href="">More details</a>
+          <a href="">View Ingredients</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/pasta.jpg" alt="">
+          <a href="" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Rainbow Pasta Salad</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="card-action">
+          <a href="">More details</a>
+          <a href="">View Ingredients</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- photo / grid - Selection Page (or Modals) -->
+
+  <!-- Modals for Selection Page ? -->
+  <div class="container">
+    <h2>Modals</h2>
+
+    <a class="btn orange modal-trigger" href="#terms">Terms & Conditions</a>
+
+    <div id="terms" class="modal">
+      <div class="modal-content">
+        <h4>Food Truck Name</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante. Cras consectetur risus id mi condimentum aliquam.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn orange">Agree</a>
+      </div>
+    </div>
+
+    <a class="btn orange modal-trigger" href="#terms">Terms & Conditions</a>
+<!-- Modal #2 - under image of food truck - add input for truck business name -->
+    <div id="terms" class="modal">
+      <div class="modal-content">
+        <h4>Food Truck Name</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante. Cras consectetur risus id mi condimentum aliquam.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close btn orange">Agree</a>
+      </div>
+    </div>
+
+  </div>
   <!-- services / tabs - not sure we will use -->
 
   <!-- parallax  - not sure we will use-->
 
   <!-- input form - 1.food category 2. location 3. distance/duration on Welcome Page -->
 
-  <!-- footer - add social media links, contact developers info -->
-
+  <!-- FOOTER - add social media links, contact developers info -->
+    <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
+    <!-- could add weather icon w/link to today's weather? -->
+    <div class="container">
+      <h4>Icons</h4>
+      <i class="material-icons grey-text">cloud</i>
+      <!-- email maybe in the footer to contact developers -->
+      <a href="#" class="btn pink waves-effect waves-light">
+        <span>Email</span>
+        <i class="material-icons left">email</i>
+      </a>
+    </div>
 
 
 
@@ -70,5 +150,23 @@
    <!-- google Maps API call -->
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk&callback=initMap" async defer></script>
    
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  
+  <!-- Calling Sidenav -->
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <!-- Calling Modal -->
+  <script>
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
+  </script>
+
+
 </body>
 </html>
