@@ -64,6 +64,10 @@ Phase Six – Finalize deliverables including readme, screen shots, user stories
 
 UI Design
 
+Logo Demo
+
+<img src="images/AustinFoodTruckLogo.jpg" width="600" height="450">
+
 images - storyboarding
 
 Google Maps API
