@@ -38,14 +38,49 @@
         </a>
              <!-- weather icon, media, take me home, ??? in the navbar -->
         <ul class="right hide-on-med-and-down">
-          <li><a href="">Take me Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="">Start Over</a></li>
           <li><a href="">Weather</a></li>
-          <li><a href="" class="btn white indigo-text">Login</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Weather</a></li>
+          <!-- below is a button option if preferred -->
+          <!-- <li><a href="" class="btn white indigo-text">Login</a></li> -->
         </ul>
       </div>
     </nav>
   </div>
+
+   <!-- Transportation, Food Category, Desired Time grid -->
+   <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="./assets/images/transit.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Travel there?</h2>
+        <p>Click all interesting options.</p>
+        <!-- add check boxes/icons for walk, bike, pubic transit, car -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="./assets/images/giphyWatch.gif" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">Time available?</h2>
+        <p>Options will be displayed nearest first with directions and a map.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="./assets/images/food.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Food Type?</h2>
+        <p>Search by food type:  </p>
+      </div>
+    </div>
+  </section>
+
 
 <!-- Here is a card, no JavaScript to drive this-->
 <div class="container">
@@ -94,6 +129,43 @@
 
 
   <!-- photo / grid - Selection Page (or Modals) -->
+ <!-- photo / grid -->
+ <section class="container section scrollspy" id="photos">
+  <div class="row">
+    <div class="col s12 l4">
+        <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4">Portraits</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4 offset-l1 push-l7">
+        <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1 pull-l5 right-align">
+      <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4">
+        <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4">Nature</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+</section>
+
+<!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="./assets/images/AustinPan.jpg" alt="" class="responsive-img">
+  </div>
+</div>
 
   <!-- Modals for Selection Page ? -->
   <div class="container">
@@ -130,7 +202,7 @@
   <!-- parallax -->
   <div class="parallax-container">
     <div class="parallax">
-      <img src="./assets/images/Austin-texas-cityscape.jpg" alt="" class="responsive-img">
+      <img src="./assets/images/AustinPan.jpg" alt="" class="responsive-img">
     </div>
   </div>
   <!-- input form - 1.food category 2. location 3. distance/duration on Welcome Page -->
@@ -184,16 +256,24 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   
-  <!-- Calling Sidenav -->
-  <script>
+     <script>
     $(document).ready(function(){
+      
+      // Calling Sidenav
       $('.sidenav').sidenav();
-    });
-  </script>
-  <!-- Calling Modal -->
-  <script>
-    $(document).ready(function(){
+      // Calling modals
       $('.modal').modal();
+      $('.materialboxed').materialbox();
+      // Calling paralax of Austin
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
     });
   </script>
 
