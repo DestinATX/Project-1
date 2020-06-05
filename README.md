@@ -63,9 +63,11 @@ Phase Five – Develop user interface
 Phase Six – Finalize deliverables including readme, screen shots, user stories, etc.
 
 Projects
-[]  Set-up Materialize framework - Wed 6/3  Adrian & Diane
-[]  Yelp API - Wed 6/3 Marlon lead
-[]  Google API - Thu 6/4 Daniel lead
+[x] Set-up Materialize framework - Wed 6/3  Adrian & Diane
+[]  Add modals and search bar - Fri 6/5 
+[x] Yelp API - Wed 6/3 Marlon lead
+[x] Google API - Thu 6/4 Daniel lead
+[]  Put markers and show directions on map Sat 6/6
 []  Logo, name, color palette - Fri 6/5
 []  Food input request - Fri 6/5
 []  Food search - Fri 6/5
@@ -74,7 +76,7 @@ Projects
 []  Trans - Bike - Sat 6/6
 []  Trans - public - Sat 6/6
 []  Trans - Car - Sat 6/6
-[]  Geo Location - Sun 6/7
+[x] Geo Location - Sun 6/7
 []  Look and Feel UI - Sun 6/7
 []  Readme work - Sun 6/7
 []  Presentation and Clean-up - Mon 6/8 
