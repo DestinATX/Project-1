@@ -15,7 +15,8 @@ Bugs and Rabbit Holes
 
 - Began defining “destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX
 - Used proxy to fix CORS error which was blocking data from Google Direction API
-  o 3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works
+  3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works
+- Found work around for Geo-location, need approval for Alert to user requesting permission
 
 audit trail information would be helpful, diagrams, screen shots, notes, etc.
 
