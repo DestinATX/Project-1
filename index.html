@@ -24,7 +24,7 @@
 
 <body>
 
-<!-- Daniel added for APIs -->
+<!-- Daniel added below for APIs -->
   <!-- <div id="map"></div> -->
 
   <!-- navbar use for logo and to return home/Welcome Page -->
@@ -41,7 +41,7 @@
           <li><a href="">Start Over</a></li>
           <li><a href="">Weather</a></li>
           <li><a href="">Home</a></li>
-          <li><a href="">Weather</a></li>
+          <li><a href="">About</a></li>
           <!-- below is a button option if preferred -->
           <!-- <li><a href="" class="btn white indigo-text">Login</a></li> -->
         </ul>
@@ -68,6 +68,7 @@
       <div class="col s12 l6 offset-l1 pull-l5 right-align">
         <h2 class="indigo-text text-darken-4">Time available?</h2>
         <p>Options will be displayed nearest first with directions and a map.</p>
+        <!-- need to add some way for users to enter their desired time to arrival here -->
       </div>
     </div>
     <div class="row">
@@ -82,9 +83,9 @@
   </section>
 
 
-<!-- Here is a card, no JavaScript to drive this-->
+<!-- Here is a card, no JavaScript to drive this, add content to "card-content"-->
 <div class="container">
-  <h2>Cards</h2>
+  <h2>Results</h2>
   <div class="row">
     <div class="col s12 l6">
       <div class="card">
@@ -100,7 +101,8 @@
         </div>
         <div class="card-action">
           <a href="">More details</a>
-          <a href="">View Ingredients</a>
+          <a href="">Directions</a>
+          <a href="">Weather</a>
         </div>
       </div>
     </div>
@@ -118,7 +120,8 @@
         </div>
         <div class="card-action">
           <a href="">More details</a>
-          <a href="">View Ingredients</a>
+          <a href="">Directions</a>
+          <a href="">Weather</a>
         </div>
       </div>
     </div>
@@ -126,39 +129,6 @@
 </div>
 
 <div id="map"></div>
-
-
-  <!-- photo / grid - Selection Page (or Modals) -->
- <!-- photo / grid -->
- <section class="container section scrollspy" id="photos">
-  <div class="row">
-    <div class="col s12 l4">
-        <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
-    </div>
-    <div class="col s12 l6 offset-l1">
-      <h2 class="indigo-text text-darken-4">Portraits</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 l4 offset-l1 push-l7">
-        <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
-    </div>
-    <div class="col s12 l6 offset-l1 pull-l5 right-align">
-      <h2 class="indigo-text text-darken-4">Cityscapes</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 l4">
-        <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
-    </div>
-    <div class="col s12 l6 offset-l1">
-      <h2 class="indigo-text text-darken-4">Nature</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-    </div>
-  </div>
-</section>
 
 <!-- parallax -->
 <div class="parallax-container">
@@ -196,19 +166,8 @@
     </div>
 
   </div>
-  <!-- services / tabs - not sure we will use -->
 
-  <!-- parallax  - not sure we will use-->
-  <!-- parallax -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="./assets/images/AustinPan.jpg" alt="" class="responsive-img">
-    </div>
-  </div>
-  <!-- input form - 1.food category 2. location 3. distance/duration on Welcome Page -->
-
-  <!-- FOOTER - add social media links, contact developers info -->
-    <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
+  <!-- Do we need icons or buttons like these?  Left this here as examples -->
     <!-- could add weather icon w/link to today's weather? -->
     <div class="container">
       <h4>Icons</h4>
@@ -220,6 +179,8 @@
       </a>
     </div>
 
+<!-- FOOTER - add social media links, contact developers info -->
+    <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
  <!-- footer -->
  <footer class="page-footer grey darken-3">
   <div class="container">
@@ -227,21 +188,31 @@
       <div class="col l6 s12">
         <h5>About Me</h5>
         <p>FoodTrucksATX is designed to work on anyone interested in finding their choice of truck, food type, and desired method of getting to the location.</p>
-        <p>Design Team includes Adrian </p>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Connect</h5>
         <ul>
+          <!-- Need to add icons here -->
           <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
           <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
           <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
           <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
         </ul>
       </div>
+      <div class="col">
+        <h5 class="white-text">Designers</h5>
+        <ul>
+          <!-- Need to add icons here -->
+          <li><a class="grey-text text-lighten-3" href="#">Adrian Palacios</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Changyeon (Daniel) Hong</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Diane Candler</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Marlon Mora</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="footer-copyright grey darken-4">
-    <div class="container center-align">&copy; 2018 Photo Ninja</div>
+    <div class="container center-align">The University of Texas Cooding Bootcamp Design Team #1</div>
   </div>
 </footer>
 
