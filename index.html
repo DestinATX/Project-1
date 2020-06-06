@@ -53,7 +53,7 @@
    <section class="container section scrollspy" id="photos">
     <div class="row">
       <div class="col s12 l4">
-          <img src="./assets/images/transit.jpg" alt="" class="responsive-img materialboxed">
+          <img src="./assets/images/transit.jpg" alt="" class="responsive-img materialboxed z-depth-4">
       </div>
       <div class="col s12 l6 offset-l1">
         <h2 class="indigo-text text-darken-4">Travel there?</h2>
@@ -67,13 +67,13 @@
       </div>
       <div class="col s12 l6 offset-l1 pull-l5 right-align">
         <h2 class="indigo-text text-darken-4">Time available?</h2>
-        <p>Options will be displayed nearest first with directions and a map.</p>
+        <p>Nearest options will be displayed first with directions and a map.</p>
         <!-- need to add some way for users to enter their desired time to arrival here -->
       </div>
     </div>
     <div class="row">
       <div class="col s12 l4">
-          <img src="./assets/images/food.jpg" alt="" class="responsive-img materialboxed">
+          <img src="./assets/images/food.jpg" alt="" class="responsive-img materialboxed z-depth-4">
       </div>
       <div class="col s12 l6 offset-l1">
         <h2 class="indigo-text text-darken-4">Food Type?</h2>
@@ -133,51 +133,10 @@
 <!-- parallax -->
 <div class="parallax-container">
   <div class="parallax">
-    <img src="./assets/images/AustinPan.jpg" alt="" class="responsive-img">
+    <img src="./assets/images/AustinPanLt.jpg" alt="panaramic view of Austin" class="responsive-img">
   </div>
 </div>
 
-  <!-- Modals for Selection Page ? -->
-  <div class="container">
-    <h2>Modals</h2>
-
-    <a class="btn orange modal-trigger" href="#terms">Terms & Conditions</a>
-
-    <div id="terms" class="modal">
-      <div class="modal-content">
-        <h4>Food Truck Name</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante. Cras consectetur risus id mi condimentum aliquam.</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close btn orange">Agree</a>
-      </div>
-    </div>
-
-    <a class="btn orange modal-trigger" href="#terms">Terms & Conditions</a>
-<!-- Modal #2 - under image of food truck - add input for truck business name -->
-    <div id="terms" class="modal">
-      <div class="modal-content">
-        <h4>Food Truck Name</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante. Cras consectetur risus id mi condimentum aliquam.</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close btn orange">Agree</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Do we need icons or buttons like these?  Left this here as examples -->
-    <!-- could add weather icon w/link to today's weather? -->
-    <div class="container">
-      <h4>Icons</h4>
-      <i class="material-icons grey-text">cloud</i>
-      <!-- email maybe in the footer to contact developers -->
-      <a href="#" class="btn pink waves-effect waves-light">
-        <span>Email</span>
-        <i class="material-icons left">email</i>
-      </a>
-    </div>
 
 <!-- FOOTER - add social media links, contact developers info -->
     <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
@@ -190,29 +149,47 @@
         <p>FoodTrucksATX is designed to work on anyone interested in finding their choice of truck, food type, and desired method of getting to the location.</p>
       </div>
       <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Connect</h5>
-        <ul>
-          <!-- Need to add icons here -->
-          <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
-          <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
-          <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
-          <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="col">
         <h5 class="white-text">Designers</h5>
         <ul>
-          <!-- Need to add icons here -->
-          <li><a class="grey-text text-lighten-3" href="#">Adrian Palacios</a></li>
-          <li><a class="grey-text text-lighten-3" href="#">Changyeon (Daniel) Hong</a></li>
-          <li><a class="grey-text text-lighten-3" href="#">Diane Candler</a></li>
-          <li><a class="grey-text text-lighten-3" href="#">Marlon Mora</a></li>
-        </ul>
+          <!-- Designer Modals -->
+    
+          <li>  <!-- Dropdown Trigger - Adrian -->
+           <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Adrian Palacios</a>
+           <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+             <li><a href="#!">Full-Stack Engineer</a></li>
+             <li><a href="https://www.linkedin.com/in/adrian-palacios-centraltexas/">Linked-In</a></li>
+             <li><a href="#!">(956) 252-7270</a></li>
+           </ul>
+          </li>
+          <li>  <!-- Dropdown Trigger - Daniel -->
+              <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Changyeon (Daniel) Hong</a>
+              <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+                <li><a href="#!">Full-Stack Engineer</a></li>
+                <li><a href="https://www.linkedin.com/in/changyeon-hong-21470a167/">Linked-In</a></li>
+                <li><a href="#!">(737)218-3825</a></li>
+              </ul>
+          </li>
+          <li>  <!-- Dropdown Trigger - Diane -->
+            <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Diane Candler</a>
+            <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+              <li><a href="#!">Full-Stack Engineer</a></li>
+              <li><a href="https://www.linkedin.com/in/diane-candler-centraltexas/">Linked-In</a></li>
+              <li><a href="#!">(512) 964-9473</a></li>
+            </ul>
+           </li>
+           <li>  <!-- Dropdown Trigger - Marlon -->
+            <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Marlon Mora</a>
+            <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+              <li><a href="#!">Full-Stack Engineer</a></li>
+              <li><a href="https://www.linkedin.com/in/dmarlon-mora-centraltexas/">Linked-In</a></li>
+              <li><a href="#!">(929)229-6136</a></li>
+            </ul>
+           </li>
       </div>
     </div>
   </div>
   <div class="footer-copyright grey darken-4">
-    <div class="container center-align">The University of Texas Cooding Bootcamp Design Team #1</div>
+    <div class="container center-align">The University of Texas Cooding Bootcamp Design Team #1 - Adrian Palacios, Changyeon (Daniel) Hong, Diane Candler, Marlon Mora</div>
   </div>
 </footer>
 
@@ -244,6 +221,8 @@
       });
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy();
+      // jQuery initialization of dropdown in footer
+      $('.dropdown-trigger').dropdown();
 
     });
   </script>
