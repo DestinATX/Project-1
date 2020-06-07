@@ -70,7 +70,7 @@ function initMap() {
         title: getYelpApi.businesses[i].name
         });
         marker.addListener('click', function() {
-          map.setZoom(16);
+          map.setZoom(19);
           map.setCenter(this.getPosition());
         });
 
