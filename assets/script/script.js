@@ -6,9 +6,41 @@ var askOrigin = "10098+Red+Sage+Dr,+Colorado+Springs,+CO+80920";
 
 var askDestiation = "Garden+of+the+gods"
 var askMode = "";
+var foodtrucks;
+
+var weatherIcon = document.getElementById("weatherIcon");
+var tempertaure = document.getElementById("temperature");
+var humidity = document.getElementById("humidity");
 
 
 
+
+
+// Google Maps javascript
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 30.270575, lng: -97.744214},
+    zoom: 12
+  });
+
+  
+
+  // Weather API
+  $.ajax({
+    url: "https://api.openweathermap.org/data/2.5/weather?q=Austin&appid=3a62bced9ceab4de3f9f5c1c6e205817"
+  }).then(function(response4) {
+    console.log(response4);
+
+    weatherIcon = response4.weather[0].icon;
+    $("#weatherIcon").attr("src", "http://openweathermap.org/img/w/" + weatherIcon + ".png" );
+    tempertaure.innerText = "Temperature: " + Math.floor(((response4.main.temp - 273.15)*9 /5)+32)+ "°F";
+    humidity.innerText = "Humidity: " + response4.main.humidity + "%";
+
+
+  });
+
+
+  // YELP API
   $.ajax({
     url:
       "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50",
@@ -22,26 +54,36 @@ var askMode = "";
     },
   }).then(function (getYelpApi) {
     console.log(getYelpApi);
+
+
+
+    for (let i = 0; i < getYelpApi.businesses.length; i++) {
+      console.log(getYelpApi.businesses[i].coordinates);
+
+      var LatLng = {
+        lat: getYelpApi.businesses[i].coordinates.latitude,
+        lng: getYelpApi.businesses[i].coordinates.longitude
+      }
+      var marker = new google.maps.Marker({
+        position: LatLng,
+        map: map,
+        title: getYelpApi.businesses[i].name
+        });
+        marker.addListener('click', function() {
+          map.setZoom(16);
+          map.setCenter(this.getPosition());
+        });
+
+    }
   });
 
 
 
-
-
-
-
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 30.270575, lng: -97.744214},
-    zoom: 12
-
-
-  });
+// HTML5 Geo-location
   if (geo === true) {
   infoWindow = new google.maps.InfoWindow;
 
-        // Try HTML5 geolocation.
+        
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -56,7 +98,7 @@ function initMap() {
             infoWindow.setContent('Current Location.');
             infoWindow.open(map);
             map.setCenter(pos);
-
+            // geo-coding
             var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/geocode/json?latlng="+ originLat +","+originLong+"&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk"
             $.ajax({
                 url: queryURL,
@@ -69,6 +111,7 @@ function initMap() {
               }).then(function(response){
                    console.log(response.results[0].formatted_address);
                    origin = response.results[0].formatted_address;
+                  //  Directions API with Geo-location
                    var queryURL ="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin="+ origin +"&destination=Garden+of+the+gods&mode=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
                    $.ajax({
                      
@@ -98,6 +141,7 @@ function initMap() {
       } else {
         origin = askOrigin;
 
+        // directions without geo-location
         var queryURL ="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?location="+ origin +"&destination=Garden+of+the+gods&mode=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
           $.ajax({
         url: queryURL,
@@ -120,8 +164,5 @@ function initMap() {
         infoWindow.open(map);
       }
 
-
 }
-
-
 
