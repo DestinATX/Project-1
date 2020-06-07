@@ -1,3 +1,14 @@
+6/7/20 Updates from team members, sync time!
+6/6/20 lots of individual efforts and breakout discussions - trying to finish as much as possible by EOD Sunday since Daniel begins summer school at UT Monday.
+6/5/20 Project due date pushed from Monday to Thursday due to UT closing for mental health (riots and unrest)
+6/4/20 Met to discuss how to handle search by food type, decided to make nice to have to avoid stalling.  Trying to finish as much as poossible by 6/7 as Daniel starts summer school
+6/3/20 HTML Materialize framework nearly complete, discussed how to implement framework, modified storyboard
+6/2/20 Reviewed work flow, readme updates, discussed work done and how to proceed.  Some challenges with syncing GitHub. Considering GEOlocation may be nice to have?
+6/1/20 Met during class to work on storyboarding, wire diagrams, flowchart, next steps & assignments
+5/31/20 Finalized plans, started basic coding framework, pulled together readme for presentation during class on 6/1 (5 or 10 minutes to present, plan to use Readme)
+5/30/20 Discussed new concept since Uber/Lyft APIs access is taking too much time - defining FoodTrucksATX as new project
+5/28/20 Split into two teams to work in APIs and Readme then reviewed Readme
+5/27/20 Working to get Uber and Lyft and other APIs to work
 5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
 Decisions:  Google Maps & Distance Matrix + OpenWeather APIs; Bootstrap replacement will be Materialize https://materializecss.com/
 Next Meeting: Agile Update at 8pm Wednesday (5/27)
