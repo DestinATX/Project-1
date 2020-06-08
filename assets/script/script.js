@@ -15,6 +15,8 @@ var humidity = document.getElementById("humidity");
 var footer = document.getElementById("footer");
 var navbar = document.getElementById("navbar");
 
+var results = document.getElementById("results");
+
 $("#about").click(function(){
   footer.scrollIntoView();
 })
@@ -71,7 +73,6 @@ function initMap() {
 
 
     for (let i = 0; i < getYelpApi.businesses.length; i++) {
-      console.log(getYelpApi.businesses[i].coordinates);
 
       var LatLng = {
         lat: getYelpApi.businesses[i].coordinates.latitude,
@@ -86,6 +87,59 @@ function initMap() {
           map.setZoom(19);
           map.setCenter(this.getPosition());
         });
+        // Tier 1
+        var cardCol = document.createElement("div");
+        results.append(cardCol);
+        cardCol.setAttribute("class","col s12 16");
+
+        // Tier 2
+        var cardMedium = document.createElement("div");
+        cardCol.append(cardMedium);
+        cardMedium.setAttribute("class","card medium")
+
+        // Tier 3 Image
+        var cardImage = document.createElement("div");
+        cardMedium.append(cardImage);
+        cardImage.setAttribute("class","card-content");
+
+        var truckImage = document.createElement("img");
+        cardImage.append(truckImage);
+        truckImage.setAttribute("src", getYelpApi.businesses[i].image_url);
+
+        var imageAnchor = document.createElement("a");
+        cardImage.append(imageAnchor);
+        imageAnchor.setAttribute("class","halfway-fab btn-floating pink pulse");
+
+        // Tier 3 Content
+        var cardContent = document.createElement("div");
+        cardMedium.append(cardContent);
+
+        var cardTitle = document.createElement("span");
+        cardContent.append(cardTitle);
+        cardTitle.innerText = getYelpApi.businesses[i].name;
+
+        var cardText = document.createElement("p");
+        cardContent.append(cardText);
+        // cardText.innerText = getYelpApi.businesses[i].categories[0].title + " " + getYelpApi.businesses[i].categories[2].title;
+        
+
+        // Tier 3 Action
+        var cardAction = document.createElement("div");
+        cardMedium.append(cardAction);
+
+        var action1 = document.createElement("a");
+        cardAction.append(action1);
+        action1.innerText= "More Details";
+
+        var action2 = document.createElement("a");
+        cardAction.append(action2);
+        action2.innerText = "Directions";
+
+        var action3 = document.createElement("a");
+        cardAction.append(action3);
+        action3.innerText = "Weather";
+
+
 
     }
   });
