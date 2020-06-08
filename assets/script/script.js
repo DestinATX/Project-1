@@ -12,6 +12,19 @@ var weatherIcon = document.getElementById("weatherIcon");
 var tempertaure = document.getElementById("temperature");
 var humidity = document.getElementById("humidity");
 
+var footer = document.getElementById("footer");
+var navbar = document.getElementById("navbar");
+
+$("#about").click(function(){
+  footer.scrollIntoView();
+})
+
+$("#home").click(function(){
+  navbar.scrollIntoView();
+})
+
+
+
 
 
 
