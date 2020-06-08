@@ -17,16 +17,190 @@
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
- <title>Project-1: destinATX</title>
+ <title>Project-1: FoodTrucksATX</title>
+ <!-- could add the background, currently has -->
+
 </head>
 
 <body>
 
-  <div id="map"></div>
+
+
+  <!-- navbar use for logo and to return home/Welcome Page -->
+  <!-- this is for the logo in the navbar / has CSS for screen sizing -->
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper indigo">
+      <div class="container">
+        <a href="#" class="brand-logo">FoodTrucksATX</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+             <!-- weather icon, media, take me home, ??? in the navbar -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="">Start Over</a></li>
+          <li><a href="">Weather</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <!-- below is a button option if preferred -->
+          <!-- <li><a href="" class="btn white indigo-text">Login</a></li> -->
+          <li><image id="weatherIcon" src="" alt="Weather Icon"></image></li>
+          <li><span id="temperature">Temperature</span></li>
+          <li><span id="humidity">Humidity</span></li>
+        </ul>
+        
+      </div>
+    </nav>
+  </div>
+
+   <!-- Transportation, Food Category, Desired Time grid -->
+   <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="./assets/images/transit.jpg" alt="" class="responsive-img materialboxed z-depth-4">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Travel there?</h2>
+        <p>Click all interesting options.</p>
+        <!-- add check boxes/icons for walk, bike, pubic transit, car -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="./assets/images/giphyWatch.gif" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">Time available?</h2>
+        <p>Nearest options will be displayed first with directions and a map.</p>
+        <!-- need to add some way for users to enter their desired time to arrival here -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="./assets/images/food.jpg" alt="" class="responsive-img materialboxed z-depth-4">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Food Type?</h2>
+        <p>Search by food type:  </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- APIs -->
+    <div id="map"></div>
+    
+<!-- Here is a card, no JavaScript to drive this, add content to "card-content"-->
+<div class="container">
+  <h2>Results</h2>
+  <div class="row">
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/images/FoodTruck1.jpg" alt="">
+          <a href="" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Mango & Chickpea Curry</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="card-action">
+          <a href="">More details</a>
+          <a href="">Directions</a>
+          <a href="">Weather</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/images/FoodTruck2.jpg" alt="">
+          <a href="" class="halfway-fab btn-floating pink pulse">
+            <i class="material-icons">favorite</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Rainbow Pasta Salad</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="card-action">
+          <a href="">More details</a>
+          <a href="">Directions</a>
+          <a href="">Weather</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div></div>
 
 
 
+<div id="map"></div>
 
+<!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="./assets/images/AustinPanLt.jpg" alt="panaramic view of Austin" class="responsive-img">
+  </div>
+</div>
+
+
+<!-- FOOTER - add social media links, contact developers info -->
+    <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
+ <!-- footer -->
+ <footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5>About Me</h5>
+        <p>FoodTrucksATX is designed to work on anyone interested in finding their choice of truck, food type, and desired method of getting to the location.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Designers</h5>
+        <ul>
+          <!-- Designer Modals -->
+    
+          <li>  <!-- Dropdown Trigger - Adrian -->
+           <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Adrian Palacios</a>
+           <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+             <li><a href="#!">Full-Stack Engineer</a></li>
+             <li><a href="https://www.linkedin.com/in/adrian-palacios-centraltexas/">Linked-In</a></li>
+             <li><a href="#!">(956) 252-7270</a></li>
+           </ul>
+          </li>
+          <li>  <!-- Dropdown Trigger - Daniel -->
+              <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Changyeon (Daniel) Hong</a>
+              <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+                <li><a href="#!">Full-Stack Engineer</a></li>
+                <li><a href="https://www.linkedin.com/in/changyeon-hong-21470a167/">Linked-In</a></li>
+                <li><a href="#!">(737)218-3825</a></li>
+              </ul>
+          </li>
+          <li>  <!-- Dropdown Trigger - Diane -->
+            <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Diane Candler</a>
+            <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+              <li><a href="#!">Full-Stack Engineer</a></li>
+              <li><a href="https://www.linkedin.com/in/diane-candler-centraltexas/">Linked-In</a></li>
+              <li><a href="#!">(512) 964-9473</a></li>
+            </ul>
+           </li>
+           <li>  <!-- Dropdown Trigger - Marlon -->
+            <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Marlon Mora</a>
+            <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
+              <li><a href="#!">Full-Stack Engineer</a></li>
+              <li><a href="https://www.linkedin.com/in/dmarlon-mora-centraltexas/">Linked-In</a></li>
+              <li><a href="#!">(929)229-6136</a></li>
+            </ul>
+           </li>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">The University of Texas Cooding Bootcamp Design Team #1 - Adrian Palacios, Changyeon (Daniel) Hong, Diane Candler, Marlon Mora</div>
+  </div>
+</footer>
 
    <!-- JavaScript link -->
    <script src=".\assets\script\script.js"></script>
@@ -35,5 +209,33 @@
    <!-- google Maps API call -->
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk&callback=initMap" async defer></script>
    
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  
+     <script>
+    $(document).ready(function(){
+      
+      // Calling Sidenav
+      $('.sidenav').sidenav();
+      // Calling modals
+      $('.modal').modal();
+      $('.materialboxed').materialbox();
+      // Calling paralax of Austin
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      // jQuery initialization of dropdown in footer
+      $('.dropdown-trigger').dropdown();
+
+    });
+  </script>
+
+
 </body>
 </html>

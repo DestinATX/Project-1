@@ -15,7 +15,8 @@ Bugs and Rabbit Holes
 
 - Began defining “destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX
 - Used proxy to fix CORS error which was blocking data from Google Direction API
-  o 3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works
+  3 Ways to Fix the CORS Error — and How Access-Control-Allow-Origin works
+- Found work around for Geo-location, need approval for Alert to user requesting permission
 
 audit trail information would be helpful, diagrams, screen shots, notes, etc.
 
@@ -61,6 +62,28 @@ Phase Three - get data flowing and filtered
 Phase Four – Build HTML and CSS infrastructure using available data
 Phase Five – Develop user interface
 Phase Six – Finalize deliverables including readme, screen shots, user stories, etc.
+
+Projects
+[x] Set-up Materialize framework - Wed 6/3  Adrian & Diane
+[]  Add modals and search bar - Fri 6/5 
+[x] Yelp API - Wed 6/3 Marlon lead
+[x] Google API - Thu 6/4 Daniel lead
+[]  Put markers and show directions on map Sat 6/6
+[]  Logo, name, color palette - Fri 6/5
+[]  Food input request - Fri 6/5
+[]  Food search - Fri 6/5
+[]  Weather - Sat 6/6
+[]  Trans - Walk - Sat 6/6
+[]  Trans - Bike - Sat 6/6
+[]  Trans - public - Sat 6/6
+[]  Trans - Car - Sat 6/6
+[x] Geo Location - Sun 6/7
+[]  Look and Feel UI - Sun 6/7
+[]  Readme work - Sun 6/7
+[]  Presentation and Clean-up - Mon 6/8 
+
+
+
 
 UI Design
 
