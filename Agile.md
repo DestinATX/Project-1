@@ -1,3 +1,13 @@
+6/7/20 (Sunday)  Met to review progress and discuss next steps. Weather APIs are working. Google maps with food truck flags are working.  Worked on linking Yelp and Google and HTML.  Sorted branches and made some progress on footer/header linking. 
+6/4/20 (Thursday)  UT called off class and recommended time for students due to unrest/riots in Austin.  Team met during class time to sync on progress and make plans for the weekend.  Updated timeline and project list.  Some progress made on updating Readme with more details.  Almost finished with changes to storyboard.  Discussed JavaScript sync requirements with HTML and how to handle pair coding, alignment of roles and responsibilities.  Group is working well as a team.
+6/3/20 (Wednesday)  Basic HTML framework completed. CORs-anywhere proxy for Google working. Added Project cards and merged branches.  
+6/2/20 (Tuesday)  Continued work on CSS/HTML and APIs. Discussed integration and how to handle branch work, merging, and consolidating files.
+6/1/20 (Monday)  Met before class to finalize Readme.  5min presentation during class went well. Spent time creating flowchart and storyboard.
+5/31/20 (Sunday) Discussed presentation and finalized plans for project given current success with APIs. Still coming up to speed on project while finishing last homework assignment.
+5/30/20 (Saturday) Changing project definition from transportation to food trucks. Unable to access Uber and Lyft.  Picked up Yelp and proceeding with Google APIs. Confirmed Materialize theme. Dividing tasks.  Worked on Readme for presentation Monday during class.
+5/29/20 (Friday) Still working on APIs. Switched focus on Google APIs. 
+5/28/20 Met during class to confirm project definition. Set Saturday deadline on APIs. Reviewed UI ideas and discussed division of work.
+5/27/20 Met to compare notes on APIs, still working on Lyft and Uber plus rental scooters, bikes.
 5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
 Decisions:  Google Maps & Distance Matrix + OpenWeather APIs; Bootstrap replacement will be Materialize https://materializecss.com/
 Next Meeting: Agile Update at 8pm Wednesday (5/27)
