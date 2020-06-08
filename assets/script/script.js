@@ -16,6 +16,7 @@ var footer = document.getElementById("footer");
 var navbar = document.getElementById("navbar");
 
 var results = document.getElementById("results");
+var checkboxVal = false;
 
 $("#about").click(function(){
   footer.scrollIntoView();
@@ -55,94 +56,91 @@ function initMap() {
   });
 
 
+  
+
   // YELP API
+  var checkboxVal = false;
+
+$("#submit").on("click", function () {
+  var price = $("#1").prop("checked") ? "1," : "";
+  price += $("#2").prop("checked") ? "2," : "";
+  price += $("#3").prop("checked") ? "3," : "";
+  price += $("#4").prop("checked") ? "4," : "";
+  var textbox = $("#foodType").val();
+  price = price.substring(0, price.length - 1);
+  console.log(price, textbox);
+
+  var searchUrl =
+    "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50&price=" +
+    price +
+    "&categories=" +
+    textbox;
+
+  console.log(searchUrl);
+
   $.ajax({
     url:
-      "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50",
+      "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50&price=" +
+      price +
+      "&categories=" +
+      textbox,
     method: "GET",
     timeout: 0,
     headers: {
       Authorization:
-        "Bearer LWQKKIC6WZLlwyI7-Pg9pE02R0wCWEQtyFS7Y3hPAu-PEbUHgvd9P9munA-Ozw5qz4XsU-RlmxcW9o8bzippVqsR-MUSpI5ZOeEs4J25asF8SJYQZZNbZFefcZPSXnYx",
-      // Cookie:
-      //   "hl=en_US; wdi=1|53E4B0D737ADFACD|0x1.7b4a3c92c2739p+30|e19930740c790522"
+        "Bearer LWQKKIC6WZLlwyI7-Pg9pE02R0wCWEQtyFS7Y3hPAu-PEbUHgvd9P9munA-Ozw5qz4XsU-RlmxcW9o8bzippVqsR-MUSpI5ZOeEs4J25asF8SJYQZZNbZFefcZPSXnYx"
     },
   }).then(function (getYelpApi) {
+   
+
     console.log(getYelpApi);
 
 
+    
 
+
+    $("#results").empty();
     for (let i = 0; i < getYelpApi.businesses.length; i++) {
+      var card = $(`<div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src="${getYelpApi.businesses[i].image_url}">
+          <span class="card-title">${getYelpApi.businesses[i].name}</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div> `);
 
-      var LatLng = {
-        lat: getYelpApi.businesses[i].coordinates.latitude,
-        lng: getYelpApi.businesses[i].coordinates.longitude
-      }
-      var marker = new google.maps.Marker({
-        position: LatLng,
-        map: map,
-        title: getYelpApi.businesses[i].name
-        });
-        marker.addListener('click', function() {
-          map.setZoom(19);
-          map.setCenter(this.getPosition());
-        });
-        // Tier 1
-        var cardCol = document.createElement("div");
-        results.append(cardCol);
-        cardCol.setAttribute("class","col s12 16");
+      $("#results").append(card);
+      for (let i = 0; i < getYelpApi.businesses.length; i++) {
 
-        // Tier 2
-        var cardMedium = document.createElement("div");
-        cardCol.append(cardMedium);
-        cardMedium.setAttribute("class","card medium")
-
-        // Tier 3 Image
-        var cardImage = document.createElement("div");
-        cardMedium.append(cardImage);
-        cardImage.setAttribute("class","card-content");
-
-        var truckImage = document.createElement("img");
-        cardImage.append(truckImage);
-        truckImage.setAttribute("src", getYelpApi.businesses[i].image_url);
-
-        var imageAnchor = document.createElement("a");
-        cardImage.append(imageAnchor);
-        imageAnchor.setAttribute("class","halfway-fab btn-floating pink pulse");
-
-        // Tier 3 Content
-        var cardContent = document.createElement("div");
-        cardMedium.append(cardContent);
-
-        var cardTitle = document.createElement("span");
-        cardContent.append(cardTitle);
-        cardTitle.innerText = getYelpApi.businesses[i].name;
-
-        var cardText = document.createElement("p");
-        cardContent.append(cardText);
-        // cardText.innerText = getYelpApi.businesses[i].categories[0].title + " " + getYelpApi.businesses[i].categories[2].title;
-        
-
-        // Tier 3 Action
-        var cardAction = document.createElement("div");
-        cardMedium.append(cardAction);
-
-        var action1 = document.createElement("a");
-        cardAction.append(action1);
-        action1.innerText= "More Details";
-
-        var action2 = document.createElement("a");
-        cardAction.append(action2);
-        action2.innerText = "Directions";
-
-        var action3 = document.createElement("a");
-        cardAction.append(action3);
-        action3.innerText = "Weather";
-
-
+        var LatLng = {
+          lat: getYelpApi.businesses[i].coordinates.latitude,
+          lng: getYelpApi.businesses[i].coordinates.longitude
+        }
+        var marker = new google.maps.Marker({
+          position: LatLng,
+          map: map,
+          title: getYelpApi.businesses[i].name
+          });
+          marker.addListener('click', function() {
+            map.setZoom(19);
+            map.setCenter(this.getPosition());
+          });
+        }
 
     }
   });
+  
+});
 
 
 
