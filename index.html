@@ -182,25 +182,30 @@
 </div>
 
 
-<!-- FOOTER - add social media links, contact developers info -->
-    <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
- <!-- footer -->
+<!-- FOOTER with developers and program info, hyperlinks to Linked-In in lower footer -->
  <footer id="footer" class="page-footer grey darken-2">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
+      <div class="col l4 s12">
         <h5>About Me</h5>
+        <br>
+
         <p>FoodTrucksATX is designed to work on anyone interested in finding their choice of truck, food type, and desired method of getting to the location.</p>
-
-      <div><button id="home">Home</button></div>
-      <div class="col l4 offset-l2 s12">
+        <p>This design team consists for four students completing the Full-Stack Coding program at The University of Texas at Austin.  To learn more, find their Linked-in profiles below.</p>
+        <hr>
+        <br>
+        <div><button id="home" class="z-depth-4 large">Return to Top</button></div>
+      </div>
+      <div class="col l6 offset-l2 s12">
         <h5 class="white-text">Designers</h5>
-
+        <hr>
         <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="./assets/images/Adrian.jpg"></a>
-          <a class="carousel-item" href="#two!"><img src="./assets/images/Daniel.jpg"></a>
-          <a class="carousel-item" href="#three!"><img src="./assets/images/Diane.jpg"></a>
-          <a class="carousel-item" href="#four!"><img src="./assets/images/Marlo.jpg"></a>
+          <a class="carousel-item z-depth-4 small" href="#one!"><img src="./assets/images/Adrian.jpg"></a>
+          <a class="carousel-item z-depth-4 small" href="#two!"><img src="./assets/images/Daniel.jpg"></a>
+          <a class="carousel-item z-depth-4 small" href="#three!"><img src="./assets/images/UTatAustin.jpg"></a>
+          <a class="carousel-item z-depth-4 small" href="#four!"><img src="./assets/images/Diane.jpg"></a>
+          <a class="carousel-item z-depth-4 small" href="#five!"><img src="./assets/images/Marlo.jpg"></a>
+          <a class="carousel-item z-depth-4 small" href="#six!"><img src="./assets/images/UTatAustin.jpg"></a>
         </div>
 
           
@@ -244,12 +249,11 @@
       <!-- </div>
       <div class="col l3 s12"> -->
           
-          </div>
-      </div>
+        </div>
     </div>  
   </div>
   <div class="footer-copyright indigo">
-    <div class="container center-align-fixed">The University of Texas Coding Bootcamp Design Team One - <a class="orange-text darken-4" href="https://www.linkedin.com/in/adrian-palacios-a1709817a/">Adrian Palacios </a>, <a class="orange-text darken-4" href="https://www.linkedin.com/in/changyeon-hong-21470a167/">Changyeon (Daniel) Hong </a>, <a class="orange-text darken-4" href="https://www.linkedin.com/in/diane-candler-centraltexas/"> Diane Candler </a> , <a class="orange-text darken-4" href="https://www.linkedin.com/in/giraldo-marlon">Marlon Mora </a></div>
+    <div class="container center-align-fixed">The University of Texas Coding Bootcamp Design Team One: <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/adrian-palacios-a1709817a/"> Adrian Palacios</a>, <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/changyeon-hong-21470a167/"> Changyeon (Daniel) Hong</a>, <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/diane-candler-centraltexas/"> Diane Candler</a>, <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/giraldo-marlon"> Marlon Mora</a></div>
   </div>
 </footer>
 
@@ -285,12 +289,12 @@
       $('.chips').chips();
       $('.dropdown-trigger').dropdown();
       $('.carousel').carousel({
-    padding: 200    
+        padding: 200    
 });
 autoplay();
 function autoplay() {
     $('.carousel').carousel('next');
-    setTimeout(autoplay, 4500);
+    setTimeout(autoplay, 2500);
 }
       
 
