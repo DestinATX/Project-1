@@ -29,6 +29,8 @@ function initMap() {
     zoom: 10,
   });
 
+  infoWindow = new google.maps.InfoWindow;
+
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function (position) {
@@ -99,6 +101,7 @@ function initMap() {
 
             console.log(searchUrl);
 
+<<<<<<< HEAD
             $.ajax({
               url:
                 "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50&price=" +
@@ -144,22 +147,96 @@ function initMap() {
 
                 var card = $(`<div class="row">
                 <div class="col m12">
+=======
+        }).then(function(response){
+             console.log(response.results[0].formatted_address);
+             origin = response.results[0].formatted_address;
+
+             $("#submit").on("click", function () {
+              
+              var price = $("#1").prop("checked") ? "1," : "";
+              price += $("#2").prop("checked") ? "2," : "";
+              price += $("#3").prop("checked") ? "3," : "";
+              price += $("#4").prop("checked") ? "4," : "";
+              var textbox = $("#foodType").val();
+              price = price.substring(0, price.length - 1);
+              console.log(price, textbox);
+            
+              var searchUrl =
+                "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50&price=" +
+                price +
+                "&categories=" +
+                textbox;
+            
+              console.log(searchUrl);
+            
+              $.ajax({
+                url:
+                  "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=foodtrucks&location=austin&limit=50&price=" +
+                  price +
+                  "&categories=" +
+                  textbox,
+                method: "GET",
+                timeout: 0,
+                headers: {
+                  Authorization:
+                    "Bearer LWQKKIC6WZLlwyI7-Pg9pE02R0wCWEQtyFS7Y3hPAu-PEbUHgvd9P9munA-Ozw5qz4XsU-RlmxcW9o8bzippVqsR-MUSpI5ZOeEs4J25asF8SJYQZZNbZFefcZPSXnYx"
+                },
+              }).then(function (getYelpApi) {
+               
+            
+                console.log(getYelpApi);
+              
+
+
+                $("#results").empty();
+                for (let i = 0; i < getYelpApi.businesses.length; i++) {
+
+                  destiation = getYelpApi.businesses[i].location.display_address[0] + " " + getYelpApi.businesses[i].location.display_address[1];
+
+                          //  Directions API with Geo-location
+             var queryURL ="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin="+ origin +"&destination="+ destiation + "=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
+             $.ajax({
+               
+           url: queryURL,
+           method: "GET",
+           dataType: "json",
+           header: {
+               'Access-Control-Allow-Origin':'*'
+           }
+         }).then(function(response2) {
+           console.log(response2);
+
+
+
+
+           
+         });  
+
+                var labels = String(i+1);
+                  var card = $(`<div class="row">
+                <div class="col s12 m7">
+>>>>>>> 142246f954d9d7a6e7be17a4112ad70ba62849b9
                   <div class="card">
                     <div class="card-image">
                       <img src="${getYelpApi.businesses[i].image_url}">
                       <span class="card-title">${getYelpApi.businesses[i].name}</span>
                     </div>
                     <div class="card-content">
-                      <p>I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively.</p>
+                      <div>${labels}. ${getYelpApi.businesses[i].name}</div>
+                      <div>Address: ${destiation}</div>
+                      <div>Phone Number: ${getYelpApi.businesses[i].display_phone}</div>                   
+                      <div>Rating: ${getYelpApi.businesses[i].rating}</div>  
                     </div>
                     <div class="card-action">
-                      <a href="#">This is a link</a>
+                      <a href="#">Diretions</a>
+                      <a href="${getYelpApi.businesses[i].url}">More Info</a>
                     </div>
                   </div>
                 </div>
               </div> `);
 
+<<<<<<< HEAD
                 $("#results").append(card);
 
                 var LatLng = {
@@ -170,15 +247,33 @@ function initMap() {
                   position: LatLng,
                   map: map,
                   title: getYelpApi.businesses[i].name,
+=======
+              var LatLng = {
+                lat: getYelpApi.businesses[i].coordinates.latitude,
+                lng: getYelpApi.businesses[i].coordinates.longitude
+              }
+
+              
+                
+              var marker = new google.maps.Marker({
+                position: LatLng,
+                map: map,
+                title: getYelpApi.businesses[i].name,
+                label: labels
+>>>>>>> 142246f954d9d7a6e7be17a4112ad70ba62849b9
                 });
                 marker.addListener("click", function () {
                   map.setZoom(19);
                   map.setCenter(this.getPosition());
+                  
+                 
+                  
                 });
               }
             });
           });
 
+<<<<<<< HEAD
           //  Directions API with Geo-location
           //      var queryURL ="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin="+ origin +"&destination=Garden+of+the+gods&mode=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
           //      $.ajax({
@@ -362,3 +457,38 @@ function initMap() {
     infoWindow.open(map);
   }
 }
+=======
+
+
+  });
+
+    }, function() {
+      handleLocationError(true, infoWindow, map.getCenter());
+    });
+    
+
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+  }
+
+  
+
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+  infoWindow.open(map);
+}
+
+
+}
+
+
+
+
+
+
+>>>>>>> 142246f954d9d7a6e7be17a4112ad70ba62849b9
