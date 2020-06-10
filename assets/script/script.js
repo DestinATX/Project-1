@@ -126,44 +126,47 @@ function initMap() {
                   getYelpApi.businesses[i].location.display_address[1];
 
                 //  Directions API with Geo-location
-                // var queryURL =
-                //   "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin=" +
-                //   origin +
-                //   "&destination=" +
-                //   destiation +
-                //   "=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
-                // $.ajax({
-                //   url: queryURL,
-                //   method: "GET",
-                //   dataType: "json",
-                //   header: {
-                //     "Access-Control-Allow-Origin": "*",
-                //   },
-                // }).then(function (response2) {
-                //   console.log(response2);
-                // });
+                var queryURL =
+                  "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin=" +
+                  origin +
+                  "&destination=" +
+                  destiation +
+                  "=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
+                $.ajax({
+                  url: queryURL,
+                  method: "GET",
+                  dataType: "json",
+                  header: {
+                    "Access-Control-Allow-Origin": "*",
+                  },
+                }).then(function (response2) {
+                  console.log(response2);
+                });
 
                 var labels = String(i + 1);
                 var card = $(`<div class="row">
-                <div class="col s12 m7">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="${getYelpApi.businesses[i].image_url}">
-                      <span class="card-title">${getYelpApi.businesses[i].name}</span>
-                    </div>
-                    <div class="card-content">
-                      <div>${labels}. ${getYelpApi.businesses[i].name}</div>
-                      <div>Address: ${destiation}</div>
-                      <div>Phone Number: ${getYelpApi.businesses[i].display_phone}</div>                   
-                      <div>Rating: ${getYelpApi.businesses[i].rating}</div>  
-                    </div>
-                    <div class="card-action">
-                      <a href="#">Diretions</a>
-                      <a href="${getYelpApi.businesses[i].url}">More Info</a>
-                    </div>
+                <div class="row">
+              <div class="col s12 m7">
+                <div class="card horizontal small">
+                  <div class="card-image">
+                    <img src="${getYelpApi.businesses[i].image_url}">
+                    <span class="card-title">${getYelpApi.businesses[i].name}</span>
+                  </div>
+                  <div class="card-stacked">
+                  <div class="card-content">
+                  <h4>${labels}. ${getYelpApi.businesses[i].name}</h4>
+                  <div>Address: ${destiation}</div>
+                  <div>Phone Number: ${getYelpApi.businesses[i].display_phone}</div>
+                  <div>Rating: ${getYelpApi.businesses[i].rating}</div>  
+
+                  </div>
+                  <div class="card-action">
+                  <a href="#">Diretions</a>
+                  <a href="${getYelpApi.businesses[i].url}">More Info</a>
                   </div>
                 </div>
-              </div> `);
+              </div>
+            </div> `);
 
                 $("#results").append(card);
 
