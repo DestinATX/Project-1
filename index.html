@@ -1,278 +1,675 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
    
+
    <!-- Materialize links -->
+
     <!--Import Google Icon Font-->
+
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
    <!--Import materialize.css CDN-->
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
    <!--Let browser know website is optimized for mobile-->
+
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+
+
     <!-- jQuery links -->
+
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
+
+
  <title>Project-1: FoodTrucksATX</title>
+
  <!-- could add the background, currently has -->
 
+
+
 </head>
+
+
 
 <body>
 
 
 
+
+
+
+
   <!-- navbar use for logo and to return home/Welcome Page -->
+
   <!-- this is for the logo in the navbar / has CSS for screen sizing -->
+
   <div id="navbar" class="navbar-fixed">
-    <nav class="nav-wrapper indigo">
+
+    <nav class="nav-wrapper orange darken-4">
+
       <div class="container">
+
         <a href="#" class="brand-logo">FoodTrucksATX</a>
+
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
+
           <i class="material-icons">menu</i>
+
         </a>
+
              <!-- weather icon, media, take me home, ??? in the navbar -->
+
         <ul class="right hide-on-med-and-down">
+
           <!-- <li><a href="">Home</a></li>         -->
+
           <!-- <li><a id="about">About</a></li> -->
+
           <!-- below is a button option if preferred -->
+
           <!-- <li><a href="" id="about" class="btn white indigo-text">About</a></li> -->
-          <li><image id="weatherIcon" src="" alt="Weather Icon" class="center-align"></image></li>
+
+          <li><image id="weatherIcon" src="" alt="Weather Icon" class="left-align"></image></li>
+
           <li><span id="temperature">Temperature</span></li>
+
           <li><span id="humidity">Humidity</span></li>
-          <li><button id="about" class="indigo waves-effect waves-light white-text btn-flat">About</button></li>
+
+          <li><button id="about" class="right-align orange darken-4 waves-effect waves-light white-text btn-flat">About</button></li>
+
         </ul>
+
         
+
       </div>
+
     </nav>
+
   </div>
+
+
 
    <!-- Transportation, Food Category, Desired Time grid -->
-   <section class="container section scrollspy" id="photos">
-    <div class="row">
-      <div class="col s12 l4">
-          <img src="./assets/images/transit.jpg" alt="" class="responsive-img materialboxed z-depth-4">
-      </div>
-      <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">Travel there?</h2>
-        <p>Click all interesting options.</p>
-        <!-- add check boxes/icons for walk, bike, pubic transit, car -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 l4 offset-l1 push-l7">
-          <img src="./assets/images/giphyWatch.gif" alt="" class="responsive-img materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
-        <h2 class="indigo-text text-darken-4">Time available?</h2>
-        <p>Nearest options will be displayed first with directions and a map.</p>
-        <!-- need to add some way for users to enter their desired time to arrival here -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 l4">
-          <img src="./assets/images/food.jpg" alt="" class="responsive-img materialboxed z-depth-4">
-      </div>
-      <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">Food Type?</h2>
-        <p>Search by food type:  </p>
-      </div>
-    </div>
-  </section>
 
-    <!-- APIs -->
-    
-<!-- Here is a card, no JavaScript to drive this, add content to "card-content"-->
-<!-- <div class="container">
-  <h2>Results</h2>
-  <div id="results" class="row">
-    <div class="col s12 l6">
-      <div class="card medium">
-        <div class="card-image">
-          <img src="./assets/images/FoodTruck1.jpg" alt="">
-          <a href="" class="halfway-fab btn-floating pink pulse">
-            <i class="material-icons">favorite</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title">Mango & Chickpea Curry</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-        <div class="card-action">
-          <a href="">More details</a>
-          <a href="">Directions</a>
-          <a href="">Weather</a>
-        </div>
+   <section class="container section scrollspy" id="photos">
+
+    <div class="row">
+
+      <div class="col s12 l4">
+
+          <img src="./assets/images/transit.jpg" alt="traffic" class="responsive-img materialboxed z-depth-4">
+
       </div>
-    </div>
-    <div class="col s12 l6">
-      <div class="card medium">
-        <div class="card-image">
-          <img src="./assets/images/FoodTruck2.jpg" alt="">
-          <a href="" class="halfway-fab btn-floating pink pulse">
-            <i class="material-icons">favorite</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title">Rainbow Pasta Salad</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-        <div class="card-action">
-          <a href="">More details</a>
-          <a href="">Directions</a>
-          <a href="">Weather</a>
-        </div>
+
+      <div class="col s12 l6 offset-l1">
+
+        <h3 class="indigo-text text-darken-4">Travel there?</h3>
+
+        <a class="waves-effect waves-light btn">button</a>
+
+        <a class="waves-effect waves-light btn">button</a>
+
+        <a class="waves-effect waves-light btn">button</a>
+
+        <a class="waves-effect waves-light btn">button</a>
+
+        <p>Click all interesting options.</p>
+
+<!-- ADD FORM OF TRANSIT HERE - CHECKBOXES?????  add check boxes/icons for walk, bike, pubic transit, car -->
+
       </div>
+
     </div>
-  </div>
-</div> -->
+
+    <div class="row">
+
+      <div class="col s12 l4 offset-l1 push-l7">
+
+          <img src="./assets/images/giphyWatch.gif" alt="wristwatch" class="responsive-img materialboxed medium z-depth-4">
+
+      </div>
+
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+
+        <h3 class="indigo-text text-darken-4">Time available?</h3>
+
+        <p>Nearest options will be displayed first with directions and a map.</p>
+
+<!-- ADD TIME INPUT HERE?????  add some way for users to enter their desired time to arrival here -->
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 l4">
+
+          <img src="./assets/images/food.jpg" alt="food" class="responsive-img materialboxed z-depth-4">
+
+      </div>
+
+      <div class="col s12 l6 offset-l1">
+
+        <h3 class="indigo-text text-darken-4">Food Type?</h3>
+
+<!-- ADD FOOD INPUT SEARCH CATEGORY HERE???????? -->
 
 <div class="container" id="displayfoodtruck">
 
+
+
   <p>
+
   <h5>Price</h5>
+
   <label>
+
       <input type="checkbox" id="1" />
+
       <span>$</span>
+
   </label>
+
   <label>
+
       <input type="checkbox" id="2" />
+
       <span>$$</span>
+
   </label><label>
+
       <input type="checkbox" id="3" />
+
       <span>$$$</span>
+
   </label>
+
   <label>
+
       <input type="checkbox" id="4" />
+
       <span>$$$$</span>
+
   </label>
+
   </p>
+
   <div class="row">
+
       <div class="col s12">
+
           <div class="row">
+
               <div class="input-field col s12">
+
                   <label for="foodType">Food Category</label>
+
                   <input type="text" id="foodType" class="autocomplete">
 
+
+
               </div>
+
           </div>
+
       </div>
+
   </div>
 
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="submit">Submit
+
+
+  <button class="btn waves-effect waves-light indigo" type="submit" name="action" id="submit">Submit
+
       <i class="material-icons right">send</i>
+
   </button>
 
-  <div id="results"></div>
+
+
+
+
+
 
 </div>
 
+      </div>
 
+    </div>
+
+  </section>
+
+  <div class="container" id="results"></div>
+
+
+
+    <!-- APIs -->
+
+    <!--  M O V E D    B E L O W    T O    I N S I D E   3 photos area  -->
+
+<!-- Here is a card, no JavaScript to drive this, add content to "card-content"-->
+
+<!-- <div class="container">
+
+  <h2>Results</h2>
+
+  <div id="results" class="row">
+
+    <div class="col s12 l6">
+
+      <div class="card medium">
+
+        <div class="card-image">
+
+          <img src="./assets/images/FoodTruck1.jpg" alt="">
+
+          <a href="" class="halfway-fab btn-floating pink pulse">
+
+            <i class="material-icons">favorite</i>
+
+          </a>
+
+        </div>
+
+        <div class="card-content">
+
+          <span class="card-title">Mango & Chickpea Curry</span>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        </div>
+
+        <div class="card-action">
+
+          <a href="">More details</a>
+
+          <a href="">Directions</a>
+
+          <a href="">Weather</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col s12 l6">
+
+      <div class="card medium">
+
+        <div class="card-image">
+
+          <img src="./assets/images/FoodTruck2.jpg" alt="">
+
+          <a href="" class="halfway-fab btn-floating pink pulse">
+
+            <i class="material-icons">favorite</i>
+
+          </a>
+
+        </div>
+
+        <div class="card-content">
+
+          <span class="card-title">Rainbow Pasta Salad</span>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        </div>
+
+        <div class="card-action">
+
+          <a href="">More details</a>
+
+          <a href="">Directions</a>
+
+          <a href="">Weather</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->
+
+
+
+
+
+<!-- MAP to show here before Paralax of Austin landscape -->
 
 <div id="map"></div>
 
+
+
 <!-- parallax -->
-<div class="parallax-container">
+
+<!-- <div class="parallax-container">
+
   <div class="parallax">
-    <img src="./assets/images/AustinPanLt.jpg" alt="panaramic view of Austin" class="responsive-img">
+
+    <img src="./assets/images/AustinPanLt.jpg" alt="" class="responsive-img">
+
   </div>
+
+</div> -->
+
+<div class="parallax-container">
+
+  <div class="parallax"><img src="./assets/images/AustinPanLt.jpg"></div>
+
 </div>
 
 
-<!-- FOOTER - add social media links, contact developers info -->
-    <!-- recommend icons (#8) w/ fb, instagram, twitter, etc. icons, plus contact developers -->
- <!-- footer -->
- <footer id="footer" class="page-footer grey darken-3">
+
+
+
+
+
+<!-- FOOTER with developers and program info, hyperlinks to Linked-In in lower footer -->
+
+ <footer id="footer" class="page-footer grey darken-2">
+
   <div class="container">
+
     <div class="row">
-      <div class="col l6 s12">
-        <h5>About Me</h5>
-        <p>FoodTrucksATX is designed to work on anyone interested in finding their choice of truck, food type, and desired method of getting to the location.</p>
+
+      <div class="col l4 s12">
+
+        <h5>About Us</h5>
+
+        <br>
+
+
+
+        <p> FoodTrucksATX is designed to work for anyone interested in finding their choice of truck, food type, and desired method of getting to the location.</p>
+
+        <p>This design team consists of four students completing the Full-Stack Coding program at The University of Texas at Austin.  To learn more, find their Linked-in profiles below.</p>
+
+        <hr>
+
+        <br>
+
+        <div><button id="home" class="z-depth-4 large">Return to Top</button></div>
+
       </div>
-      <div><button id="home">Home</button></div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Designers</h5>
-        <ul>
-          <!-- Designer Modals -->
+
+      <div class="col l6 offset-l2 s12">
+
+        <h5 class="white-text">Developers</h5>
+
+        <hr>
+
+        <div class="carousel">
+
+          <a class="carousel-item z-depth-4 small" href="#one!"><img src="./assets/images/Adrian.jpg"></a>
+
+          <a class="carousel-item z-depth-4 small" href="#two!"><img src="./assets/images/Daniel.jpg"></a>
+
+          <a class="carousel-item z-depth-4 small" href="#three!"><img src="./assets/images/UTatAustin.jpg"></a>
+
+          <a class="carousel-item z-depth-4 small" href="#four!"><img src="./assets/images/Diane.jpg"></a>
+
+          <a class="carousel-item z-depth-4 small" href="#five!"><img src="./assets/images/Marlo.jpg"></a>
+
+          <a class="carousel-item z-depth-4 small" href="#six!"><img src="./assets/images/UTatAustin.jpg"></a>
+
+        </div>
+
+
+
+          
+
+        <!-- <ul> -->
+
+           <!-- Designers with Dropdown for contact information --> 
+
     
-          <li>  <!-- Dropdown Trigger - Adrian -->
-           <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Adrian Palacios</a>
-           <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
-             <li><a href="#!">Full-Stack Engineer</a></li>
-             <li><a href="https://www.linkedin.com/in/adrian-palacios-a1709817a/">Linked-In</a></li>
-             <li><a href="#!">(956) 252-7270</a></li>
-           </ul>
-          </li>
-          <li>  <!-- Dropdown Trigger - Daniel -->
-              <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Changyeon (Daniel) Hong</a>
-              <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
-                <li><a href="#!">Full-Stack Engineer</a></li>
-                <li><a href="https://www.linkedin.com/in/changyeon-hong-21470a167/">Linked-In</a></li>
-                <li><a href="#!">(737)218-3825</a></li>
-              </ul>
-          </li>
-          <li>  <!-- Dropdown Trigger - Diane -->
-            <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Diane Candler</a>
-            <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
-              <li><a href="#!">Full-Stack Engineer</a></li>
-              <li><a href="https://www.linkedin.com/in/diane-candler-centraltexas/">Linked-In</a></li>
-              <li><a href="#!">(512) 964-9473</a></li>
-            </ul>
-           </li>
-           <li>  <!-- Dropdown Trigger - Marlon -->
-            <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Marlon Mora</a>
-            <ul id='dropdown2' class='dropdown-content'>  <!-- Dropdown Structure Daniel -->
-              <li><a href="#!">Full-Stack Engineer</a></li>
-              <li><a href="https://www.linkedin.com/in/giraldo-marlon">Linked-In</a></li>
-              <li><a href="#!">(929)229-6136</a></li>
-            </ul>
-           </li>
-      </div>
-    </div>
+
+          <!-- <li>  Dropdown Trigger - Adrian -->
+
+            <!-- <div class="chip"> -->
+
+              <!-- <img src="./assets/images/Adrian.jpg" small>Adrian Palacios</div> -->
+
+            <!-- <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown1'>Adrian Palacios</a> -->
+
+           <!-- <ul id='dropdown1' class='dropdown-content'>  Dropdown StructureAdrian -->
+
+             <!-- <li><a href="#!">Full-Stack Engineer</a></li> -->
+
+             <!-- <li><a href="https://www.linkedin.com/in/adrian-palacios-a1709817a/">Linked-In</a></li> -->
+
+             <!-- <li><a href="#!">(956) 252-7270</a></li> -->
+
+           <!-- </ul> -->
+
+          <!-- </li> -->
+
+          <!-- <li>  Dropdown Trigger - Daniel -->
+
+              <!-- <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown2'>Changyeon (Daniel) Hong</a> -->
+
+              <!-- <ul id='dropdown2' class='dropdown-content'>  Dropdown Structure Daniel -->
+
+                <!-- <li><a href="#!">Full-Stack Engineer</a></li> -->
+
+                <!-- <li><a href="https://www.linkedin.com/in/changyeon-hong-21470a167/">Linked-In</a></li> -->
+
+                <!-- <li><a href="#!">(737)218-3825</a></li> -->
+
+              <!-- </ul> -->
+
+          <!-- </li> -->
+
+          <!-- <li>  Dropdown Trigger - Diane -->
+
+            <!-- <a class=/'dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown3'>Diane Candler</a> -->
+
+            <!-- <ul id='dropdown3' class='dropdown-content'>  Dropdown Structure Diane -->
+
+              <!-- <li><a href="#!">Full-Stack Engineer</a></li> -->
+
+              <!-- <li><a href="https://www.linkedin.com/in/diane-candler-centraltexas/">Linked-In</a></li> -->
+
+              <!-- <li><a href="#!">(512) 964-9473</a></li> -->
+
+            <!-- </ul> -->
+
+           <!-- </li> -->
+
+           <!-- <li>  Dropdown Trigger - Marlon -->
+
+            <!-- <a class='dropdown-trigger btn-small grey darken-3 waves-effect waves-light' href='#' data-target='dropdown4'>Marlon Mora</a> -->
+
+            <!-- <ul id='dropdown4' class='dropdown-content'>  Dropdown Structure Marlon -->
+
+              <!-- <li><a href="#!">Full-Stack Engineer</a></li> -->
+
+              <!-- <li><a href="https://www.linkedin.com/in/giraldo-marlon">Linked-In</a></li> -->
+
+              <!-- <li><a href="#!">(929)229-6136</a></li> -->
+
+            <!-- </ul> -->
+
+           <!-- </li> -->
+
+      <!-- </div>
+
+      <div class="col l3 s12"> -->
+
+          
+
+        </div>
+
+    </div>  
+
   </div>
-  <div class="footer-copyright grey darken-4">
-    <div class="container center-align">The University of Texas Cooding Bootcamp Design Team #1 - Adrian Palacios, Changyeon (Daniel) Hong, Diane Candler, Marlon Mora</div>
+
+  <div class="footer-copyright indigo">
+
+    <div class="container center-align-fixed">The University of Texas Coding Bootcamp Design Team One: <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/adrian-palacios-a1709817a/"> Adrian Palacios</a>, <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/changyeon-hong-21470a167/"> Changyeon (Daniel) Hong</a>, <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/diane-candler-centraltexas/"> Diane Candler</a>, <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/giraldo-marlon"> Marlon Mora</a></div>
+
   </div>
+
 </footer>
 
+
+
    <!-- JavaScript link -->
+
    <script src=".\assets\script\script.js"></script>
+
    <!--JavaScript at end of body for optimized loading-->
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
    <!-- google Maps API call -->
+
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk&callback=initMap" async defer></script>
+
    
+
   <!-- Compiled and minified JavaScript -->
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
   
+
      <script>
+
     $(document).ready(function(){
+
       
+
       // Calling Sidenav
+
       $('.sidenav').sidenav();
+
       // Calling modals
+
       $('.modal').modal();
+
       $('.materialboxed').materialbox();
+
       // Calling paralax of Austin
+
       $('.parallax').parallax();
+
       $('.tabs').tabs();
+
       $('.datepicker').datepicker({
+
         disableWeekends: true,
+
         yearRange: 1
+
       });
+
       $('.tooltipped').tooltip();
+
       $('.scrollspy').scrollSpy();
+
       // jQuery initialization of dropdown in footer
+
+      $('.chips').chips();
+
       $('.dropdown-trigger').dropdown();
 
+      $('.carousel').carousel({
+
+        padding: 200    
+
+});
+
+$('input#input_text, textarea#textarea2').characterCounter();
+      $('input.autocomplete').autocomplete({
+        data: {
+          "korean": null,
+          "foodtrucks": null,
+          "bbq": null,
+          "taiwanese": null,
+          "foodstands": null,
+          "hotdog": null,
+          "tacos": null,
+          "brazilian": null,
+          "latin": null,
+          "coffee": null,
+          "bars": null,
+          "sandwiches": null,
+          "newamerican": null,
+          "mediterranean": null,
+          "cheese": null,
+          "mexican": null,
+          "cajun": null,
+          "vietnamese": null,
+          "seafood": null,
+          "gluten_free": null,
+          "pizza": null,
+          "italian": null,
+          "breakfast_brunch": null,
+          "indpak": null,
+          "gourmet": null,
+          "cuban": null,
+          "vegan": null,
+          "vegetarian": null,
+          "wraps": null,
+          "sushi": null,
+          "halal": null,
+          "mideastern": null,
+          "thai": null,
+          "comforfood": null,
+          "burgers": null,
+          "beerbar": null,
+          "asianfusion": null,
+          "cheesesteaks": null,
+          "beergardens": null,
+          "chinese": null,
+        },
+      });
+
+autoplay();
+
+function autoplay() {
+
+    $('.carousel').carousel('next');
+
+    setTimeout(autoplay, 2500);
+
+}
+
+      
+
+
+
     });
+
   </script>
 
 
+
+
+
 </body>
+
 </html>
