@@ -113,6 +113,7 @@ var directionsService = new google.maps.DirectionsService;
           start = response.results[0].formatted_address;
 
           $("#submit").on("click", function () {
+            foodTruckArray = [];
             removeMarkers();
 
             var price = $("#1").prop("checked") ? "1," : "";
@@ -154,6 +155,7 @@ var directionsService = new google.maps.DirectionsService;
                   getYelpApi.businesses[i].location.display_address[1];
 
 
+
                 var labels = String(i + 1);
                 var card = $(`<div class="row">
                 <div class="row">
@@ -172,18 +174,29 @@ var directionsService = new google.maps.DirectionsService;
 
                   </div>
                   <div class="card-action">
-                  <button id="getDirections${labels}">Diretions</button>
+                  <button id="getDirections${labels}" value="${labels}">Diretions</button>
                   <a href="${getYelpApi.businesses[i].url}">More Info</a>
                   </div>
                 </div>
               </div>
             </div> `);
 
+               
+                
+                localStorage.setItem(labels,end);
+                
                 $("#results").append(card);
 
+                
+
                 $(`#getDirections${labels}`).click(function() {
-                   console.log(this);
-                  calculateAndDisplayRoute(directionsService,directionsRenderer);
+                  
+                  console.log(localStorage.getItem(this.getAttribute("value")));
+
+                  // $.ajax
+
+                   
+                 
                   
                 });
 
@@ -232,6 +245,8 @@ var directionsService = new google.maps.DirectionsService;
     infoWindow.open(map);
   }
   
+
+
 }
 
 function removeMarkers(){
@@ -240,14 +255,16 @@ function removeMarkers(){
   }
 }
 
-function calculateAndDisplayRoute(directionsService, directionsRenderer) {
 
+function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+  
   directionsService.route({
     origin: start,
     destination: end,
     travelMode: askMode
   }, function(response5, status) {
     if (status === 'OK') {
+      console.log (response5);
       directionsRenderer.setDirections(response5);
     } else {
       window.alert('Directions request failed due to ' + status);
