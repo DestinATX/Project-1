@@ -93,6 +93,8 @@ var footer = document.getElementById("footer");
 var navbar = document.getElementById("navbar");
 // results variable
 var results = document.getElementById("results");
+// map div
+var mapDiv = document.getElementById("map");
 
 // array for markers
 var markerArray = [];
@@ -289,7 +291,7 @@ var directionsService = new google.maps.DirectionsService;
                 
                 // get direction to the food truck
                 $(`#getDirections${labels}`).click(function() {
-                  
+                  mapDiv.scrollIntoView();
                   // using local storage data
                   var endPoint = (localStorage.getItem(this.getAttribute("value")));
 
