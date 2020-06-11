@@ -174,8 +174,8 @@ var directionsService = new google.maps.DirectionsService;
 
                   </div>
                   <div class="card-action">
-                  <button id="getDirections${labels}" value="${labels}">Diretions</button>
-                  <a href="${getYelpApi.businesses[i].url}">More Info</a>
+                  <a id="getDirections${labels}" value="${labels}">Directions</a>
+                  <a href="${getYelpApi.businesses[i].url}" target="_blank">More Info</a>
                   </div>
                 </div>
               </div>
@@ -191,10 +191,22 @@ var directionsService = new google.maps.DirectionsService;
 
                 $(`#getDirections${labels}`).click(function() {
                   
-                  console.log(localStorage.getItem(this.getAttribute("value")));
+                  var endPoint = (localStorage.getItem(this.getAttribute("value")));
 
-                  // $.ajax
+              
 
+                directionsService.route({
+                      origin: start,
+                      destination: endPoint,
+                      travelMode: askMode
+                    }, function(response5, status) {
+                      if (status === 'OK') {
+                        console.log (response5);
+                        directionsRenderer.setDirections(response5);
+                      } else {
+                        window.alert('Directions request failed due to ' + status);
+                      }
+                    });
                    
                  
                   
@@ -256,18 +268,18 @@ function removeMarkers(){
 }
 
 
-function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+// function calculateAndDisplayRoute(directionsService, directionsRenderer) {
   
-  directionsService.route({
-    origin: start,
-    destination: end,
-    travelMode: askMode
-  }, function(response5, status) {
-    if (status === 'OK') {
-      console.log (response5);
-      directionsRenderer.setDirections(response5);
-    } else {
-      window.alert('Directions request failed due to ' + status);
-    }
-  });
-}
+//   directionsService.route({
+//     origin: start,
+//     destination: end,
+//     travelMode: askMode
+//   }, function(response5, status) {
+//     if (status === 'OK') {
+//       console.log (response5);
+//       directionsRenderer.setDirections(response5);
+//     } else {
+//       window.alert('Directions request failed due to ' + status);
+//     }
+//   });
+// }
