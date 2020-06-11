@@ -29,9 +29,7 @@
     <nav class="nav-wrapper orange darken-4">
       <div class="container">
         <a href="#" class="brand-logo large">FoodTrucksATX</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-links">
-          <i class="material-icons">menu</i>
-        </a>
+        
 
         <!-- weather with icon and About (takes to footer) in the navbar -->
         <ul class="right hide-on-med-and-down">
@@ -61,17 +59,17 @@
       </div>
       <div class="col s12 l6 offset-l1">
         <h3 class="indigo-text text-darken-4">Travel there?</h3>
-        <h6>Click ONE interesting options.</h6>
+        <h6>Click ONE travel option.</h6>
         <button id="walking" class="waves-effect waves-light btn indigo">Walking</button>
         <button id="bicycle" class="waves-effect waves-light btn indigo">Bicycle</button>
         <button id="driving" class="waves-effect waves-light btn indigo">Driving</button>
         <button id="transit" class="waves-effect waves-light btn indigo">Public Transit</button>
 
-        <!-- NEEDED    NEEDED    NEEDED    ADD SEARCH BY TRANSIT CODE HERE   -->
+        \
       </div>
     </div>
 
-<!-- NEED TO MOVE FOOD SEARCH HERE AND PUSH TIME DOWN - add photo carousel with reviews? -->
+<!-- Image Carousels -->
 <div class="row">
   <div class="col s12 l4 offset-l1 push-l7">
     <div class="carousel">
@@ -96,11 +94,10 @@
   </div>
   <div class="col s12 l6 offset-l1 pull-l5 right-align">
     <h3 class="valign-center indigo-text text-darken-4">What are you hungry for?</h3>
-    <!-- <p>Nearest options will be displayed first with directions and a map.</p> -->
   </div>
 </div>
 
-    <!--  FOOD SEARCH - need to swap with line 100 - careful with input and boxes!!!  -->
+    <!--  FOOD SEARCH  -->
     <div class="row">
       <div class="col s12 l4">
         <img src="./assets/images/food.jpg" alt="food" class="responsive-img materialboxed z-depth-4">
@@ -111,23 +108,23 @@
 
         <div class="container" id="displayfoodtruck">
 
+          
           <p>
           <h5>Price</h5>
           <label>
             <input type="checkbox" id="1" />
-            <span>$</span>
+            <span class="dollars">$</span>
+          </label>
+          <label>
+            <input type="checkbox" id="1" />
+            <span class="dollars">$$</span>
           </label>
           <label>
             <input type="checkbox" id="2" />
-            <span>$$</span>
-          </label><label>
-            <input type="checkbox" id="3" />
-            <span>$$$</span>
+            <span class="dollars">$$$</span>
           </label>
           <label>
-            <input type="checkbox" id="4" />
-            <span>$$$$</span>
-          </label>
+            Choose at least one option.
           </p>
           <div class="row">
             <div class="col s12">
@@ -162,7 +159,7 @@
   <div id="map"></div>
 
    <!-- direction panel -->
-   <div id="right-panel"></div>
+   <div id="directionPanel"></div>
 
   <!-- parallax of Austin skyline below map -->
   <div class="parallax-container">
@@ -206,13 +203,13 @@
       </div>
     </div>
     <div class="footer-copyright indigo">
-      <div class="container center-align-fixed">The University of Texas Coding Bootcamp Design Team One: <a
-          class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/adrian-palacios-a1709817a/"> Adrian
-          Palacios</a>, <a class="orange-text darken-4 z-depth-2"
-          href="https://www.linkedin.com/in/changyeon-hong-21470a167/"> Changyeon (Daniel) Hong</a>, <a
-          class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/diane-candler-centraltexas/"> Diane
-          Candler</a>, and <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/giraldo-marlon">
-          Marlon Mora</a></div>
+      <div class="container center-align-fixed">The University of Texas Coding Bootcamp Design Team One: 
+        <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/adrian-palacios-a1709817a/" target="_blank"> Adrian
+          Palacios</a>, 
+          <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/changyeon-hong-21470a167/" target="_blank"> Changyeon (Daniel) Hong</a>, 
+          <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/diane-candler-centraltexas/" target="_blank"> Diane
+          Candler</a>, 
+          and <a class="orange-text darken-4 z-depth-2" href="https://www.linkedin.com/in/giraldo-marlon" target="_blank"> Marlon Mora</a></div>
     </div>
   </footer>
 
@@ -228,85 +225,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-  <!-- Function to call Materialize -->
-  <script>
-    $(document).ready(function () {
-      // Calling Sidenav
-      $('.sidenav').sidenav();
-      // Calling modals
-      $('.modal').modal();
-      $('.materialboxed').materialbox();
-      // Calling parallax of Austin
-      $('.parallax').parallax();
-      // $('.tabs').tabs();
-      $('.datepicker').datepicker({
-        disableWeekends: true,
-        yearRange: 1
-      });
-      // $('.tooltipped').tooltip();
-      $('.scrollspy').scrollSpy();
-
-      // jQuery initialization of dropdown in footer
-      // $('.chips').chips();
-      $('.dropdown-trigger').dropdown();
-      $('.carousel').carousel({
-        padding: 200
-      });
-
-      // auto-fill when users type food type
-      $('input#input_text, textarea#textarea2').characterCounter();
-      $('input.autocomplete').autocomplete({
-        data: {
-          "korean": null,
-          "foodtrucks": null,
-          "bbq": null,
-          "taiwanese": null,
-          "foodstands": null,
-          "hotdog": null,
-          "tacos": null,
-          "brazilian": null,
-          "latin": null,
-          "coffee": null,
-          "bars": null,
-          "sandwiches": null,
-          "newamerican": null,
-          "mediterranean": null,
-          "cheese": null,
-          "mexican": null,
-          "cajun": null,
-          "vietnamese": null,
-          "seafood": null,
-          "gluten_free": null,
-          "pizza": null,
-          "italian": null,
-          "breakfast_brunch": null,
-          "indpak": null,
-          "gourmet": null,
-          "cuban": null,
-          "vegan": null,
-          "vegetarian": null,
-          "wraps": null,
-          "sushi": null,
-          "halal": null,
-          "mideastern": null,
-          "thai": null,
-          "comforfood": null,
-          "burgers": null,
-          "beerbar": null,
-          "asianfusion": null,
-          "cheesesteaks": null,
-          "beergardens": null,
-          "chinese": null,
-        },
-      });
-      // calls developer carousel
-      autoplay();
-      function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 2500);
-      }
-    });
-  </script>
+  
 </body>
 
 </html>
