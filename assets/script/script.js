@@ -1,8 +1,5 @@
-var map, infoWindow;
-var originLat, originLong;
-
-var destiation;
-var askMode;
+var map, infoWindow, originLat, originLong, destination, start, end;
+var askMode="DRIVING";
 
 var weatherIcon = document.getElementById("weatherIcon");
 var tempertaure = document.getElementById("temperature");
@@ -14,6 +11,28 @@ var navbar = document.getElementById("navbar");
 var results = document.getElementById("results");
 var markerArray = [];
 
+
+$("#driving").click(function() {
+  askMode = "DRIVING";
+  console.log(askMode);
+});
+
+$("#bicycle").click(function() {
+  askMode = "BICYCLING";
+  console.log(askMode);
+});
+
+$("#walking").click(function() {
+  askMode = "WALKING";
+  console.log(askMode);
+});
+
+$("#transit").click(function() {
+  askMode = "TRANSIT";
+  console.log(askMode);
+});
+
+
 $("#about").click(function () {
   footer.scrollIntoView();
 });
@@ -24,10 +43,19 @@ $("#home").click(function () {
 
 // Google Maps javascript
 function initMap() {
+
+var directionsRenderer = new google.maps.DirectionsRenderer;
+var directionsService = new google.maps.DirectionsService;
+
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 30.270575, lng: -97.744214 },
     zoom: 10,
   });
+
+  directionsRenderer.setMap(map);
+  directionsRenderer.setPanel(document.getElementById('right-panel'));
+
+  
 
   infoWindow = new google.maps.InfoWindow();
 
@@ -82,7 +110,7 @@ function initMap() {
           },
         }).then(function (response) {
           console.log(response.results[0].formatted_address);
-          origin = response.results[0].formatted_address;
+          start = response.results[0].formatted_address;
 
           $("#submit").on("click", function () {
             removeMarkers();
@@ -120,28 +148,11 @@ function initMap() {
 
               $("#results").empty();
               for (let i = 0; i < getYelpApi.businesses.length; i++) {
-                destiation =
+                end =
                   getYelpApi.businesses[i].location.display_address[0] +
                   " " +
                   getYelpApi.businesses[i].location.display_address[1];
 
-                //  Directions API with Geo-location
-                var queryURL =
-                  "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin=" +
-                  origin +
-                  "&destination=" +
-                  destiation +
-                  "=driving&key=AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk";
-                $.ajax({
-                  url: queryURL,
-                  method: "GET",
-                  dataType: "json",
-                  header: {
-                    "Access-Control-Allow-Origin": "*",
-                  },
-                }).then(function (response2) {
-                  console.log(response2);
-                });
 
                 var labels = String(i + 1);
                 var card = $(`<div class="row">
@@ -155,13 +166,13 @@ function initMap() {
                   <div class="card-stacked">
                   <div class="card-content">
                   <h4>${labels}. ${getYelpApi.businesses[i].name}</h4>
-                  <div>Address: ${destiation}</div>
+                  <div>Address: ${end}</div>
                   <div>Phone Number: ${getYelpApi.businesses[i].display_phone}</div>
                   <div>Rating: ${getYelpApi.businesses[i].rating}</div>  
 
                   </div>
                   <div class="card-action">
-                  <a href="#">Diretions</a>
+                  <button id="getDirections${labels}">Diretions</button>
                   <a href="${getYelpApi.businesses[i].url}">More Info</a>
                   </div>
                 </div>
@@ -169,6 +180,15 @@ function initMap() {
             </div> `);
 
                 $("#results").append(card);
+
+                $(`#getDirections${labels}`).click(function() {
+                   console.log(this);
+                  calculateAndDisplayRoute(directionsService,directionsRenderer);
+                  
+                });
+
+
+
 
                 var LatLng = {
                   lat: getYelpApi.businesses[i].coordinates.latitude,
@@ -211,10 +231,26 @@ function initMap() {
     );
     infoWindow.open(map);
   }
+  
 }
 
 function removeMarkers(){
   for(i=0; i<markerArray.length; i++){
       markerArray[i].setMap(null);
   }
+}
+
+function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+
+  directionsService.route({
+    origin: start,
+    destination: end,
+    travelMode: askMode
+  }, function(response5, status) {
+    if (status === 'OK') {
+      directionsRenderer.setDirections(response5);
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
 }

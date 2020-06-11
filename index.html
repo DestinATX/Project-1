@@ -61,11 +61,11 @@
       </div>
       <div class="col s12 l6 offset-l1">
         <h3 class="indigo-text text-darken-4">Travel there?</h3>
-        <a class="waves-effect waves-light btn indigo">Walk</a>
-        <a class="waves-effect waves-light btn indigo">Bicycle</a>
-        <a class="waves-effect waves-light btn indigo">Car</a>
-        <a class="waves-effect waves-light btn indigo">Public Transit</a>
         <h6>Click ONE interesting options.</h6>
+        <button id="walking" class="waves-effect waves-light btn indigo">Walking</button>
+        <button id="bicycle" class="waves-effect waves-light btn indigo">Bicycle</button>
+        <button id="driving" class="waves-effect waves-light btn indigo">Driving</button>
+        <button id="transit" class="waves-effect waves-light btn indigo">Public Transit</button>
 
         <!-- NEEDED    NEEDED    NEEDED    ADD SEARCH BY TRANSIT CODE HERE   -->
       </div>
@@ -160,6 +160,9 @@
 
   <!-- MAP of Austin, with pin tags when user's geo location is available -->
   <div id="map"></div>
+
+   <!-- direction panel -->
+   <div id="right-panel"></div>
 
   <!-- parallax of Austin skyline below map -->
   <div class="parallax-container">
