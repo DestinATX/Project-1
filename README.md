@@ -1,4 +1,4 @@
-**FoodTrucksATX Application**
+***FoodTrucksATX Application***
 
 GitHub URL: https://destinatx.github.io/Project-1/
 GitHub: https://github.com/DestinATX/Project-1/settings
@@ -8,6 +8,7 @@ GitHub: https://github.com/DestinATX/Project-1/settings
 Designed for users of all ages to determine the available food trucks in the user&#39;s desired area of Austin, TX then allowing them to choose to walk, bike, take public transit, or drive based on their desired time to arrival.
 
 **User Comments**
+
 22 year old college student used this application on his laptop to find a food truck nearby. His first remark was, &quot;Oh wow, this looks more like a third project instead of a first project.&quot; He ended up driving to Yummy Thai on Rainey Street.
 
 “Its so nice out I really want to drive but get some food somewhere thats not a restaurant, Wow let me try FoodTruckATX it will probably get me something yummy”
@@ -45,48 +46,51 @@ Designed for users of all ages to determine the available food trucks in the use
 
 **Resources and Tech Stack**
 Frontend:  _HTML, CSS, JavaScript, JQuery, AJAX, JSON_
+
 Tools_: Postman_
+
 APIs: _Google Maps JavaScript, Google Directions, CORS Anywhere Yelp, OpenWeather, CityBikes_
+
 _GitHub_ used to leverage project management, workflow, and application/file storage.
 
 **Team Management**
 
 |![Adrian Palacios](./assets/images/AdrianSmall.jpg)  **Adrian Palacios**  _Full-Stack Engineer_
-
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/adrian-palacios-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:adrianpalacios33@yahoo.com)adrianpalacios33@yahoo.com [![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(956)%20252-7270)(956) 252-7270
 ![](RackMultipart20200613-4-1by8p4k_html_da23e1470fcb6ecf.jpg)
 
 
 |![Daniel Hong](./assets/images/Daniel.jpg)  **Changyeon (Daniel) Hong** _Full-Stack Engineer_
-
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/changyeon-hong-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:hongchangyeon@gmail.com)hongchangyeon@gmail.com[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)%20218-3825)(737)218-3825
 
 
 |![Diane Candler](./assets/images/Diane.jpg)  **Diane Candler** _Full-Stack Engineer_
-
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/diane-candler-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:dianedcandler@gmail.com)[dianedcandler@gmail.com](mailto:dianedcandler@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(512)%20964-9473) (512)964-9473
 
-|![Marlon Mora](./assets/images/Marlo.jpg)  **Marlon Mora** _Full-Stack Engineer_
-
+|![Marlon Mora](./assets/images/Marlon.jpg)  **Marlon Mora** _Full-Stack Engineer_
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/dmarlon-mora-centraltexas/
 ![](RackMultipart20200613-4-1by8p4k_html_ab3ef628e8fb2c92.gif)[marlonmora.ndr@gmail.com](mailto:marlonmora.ndr@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)-218-3825)(929)2296136
+
 
 Review the team&#39;s work on our GitHub [https://github.com/DestinATX/Project-1](https://github.com/DestinATX/Project-1)
 Or URL [https://destinatx.github.io/Project-1/](https://destinatx.github.io/Project-1/)
 
 
 **Phase Review**
+
 |![Phase Review](./assets/images/projectTable.PNG)
 
 **Materialize inspiration**
-|![Materialize inspiration](./assets/images/MaterializeInspire.PNG)
+
+|![Materialize inspiration](./assets/images/MaterializeInspire.png)
 
 **Storyboard**
 ![Welcome Page Storyboard](./assets/images/storyboardPg1.PNG)
-Welcome Page
+**Welcome Page**
+
 ![Results Page Storyboard](./assets/images/storyboardPg2.PNG)
 
 ![Selection Page Storyboard](./assets/images/storyboardPg3.PNG)
@@ -98,12 +102,12 @@ Welcome Page
 
 **Modified Flow Chart**
 
-![Selection Page Storyboard](./assets/images/newFlowchart.PNG)
+![Selection Page Storyboard](./assets/images/newFlowchart.png)
 
 **UI Design**
 
-**Welcome Page**
 
+**Welcome Page**
 |![Phase Review](./assets/images/SearchApp.PNG)
 
 **Results Page**
@@ -137,7 +141,10 @@ _Enhancements we want to see in the next version:_
 - Add GEO Location
 - Add Food Truck attributes such as rating, reviews, menus, etc.
 
+
 **Lessons Learned**
+
+
   **Time Management:** working in a group with varied schedules requires more planning, flexibility, and extra time. Dividing tasks and defining roles is critical.
 
   **Resolving Conflicts:** Best to solve conflicts using Zoom/Meet instead of through Slack.
