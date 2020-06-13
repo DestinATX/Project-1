@@ -48,7 +48,7 @@ _GitHub_ used to leverage project management, workflow, and application/file sto
 
 **Team Management**
 
-|![Adrian Palacios](./assets/images/Adrian.jpg)  **Adrian Palacios**  _Full-Stack Engineer_
+|![Adrian Palacios](./assets/images/AdrianSmall.jpg)  **Adrian Palacios**  _Full-Stack Engineer_
 
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/adrian-palacios-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:adrianpalacios33@yahoo.com)adrianpalacios33@yahoo.com [![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(956)%20252-7270)(956) 252-7270
