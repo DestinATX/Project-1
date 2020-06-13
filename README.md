@@ -107,115 +107,211 @@ Enhancements we want to see in the next version:
 • Add GEO Location
 • Add Food Truck attributes such as rating, reviews, menus, etc.
 
-5/30/20 Met from 1-4pm worked on APIs to determine
-5/28/20 - Met 6:30-10:00pm
-Met with class to review project expectation with instructor then split into teams at 7pm.
-Adrian and Diane worked on readme while Marlon and Daniel worked on APIs.
+Lessons Learned
+Valuable lessons: Planning out our project was instrumental in our success. We decided to create a food truck search for the city of Austin. This decision was based on two objectives. One, to capture the food truck spirit in the Austin community and second, to secure well rounded understanding of the data that we would display based on the time given to complete this Project. This course of action proved beneficial to our goal of creating a straightforward practical product that would benefit our userbase in Austin while creating enough time to evaluate our data for public use.
 
----
-
-> > > > > > > a81647d211cb24fe33abb56ab40178a8dfd49a48
-> > > > > > > NEXT STEPS:
-> > > > > > > 5/26/20 - Met 7:30-10:30pm, reviewed APIs, acquired keys, developed next steps, recorded data
-> > > > > > > Decisions: Google Maps & Distance Matrix + OpenWeather APIs; Bootstrap replacement will be Materialize https://materializecss.com/
-> > > > > > > Next Meeting: Agile Update at 8pm Wednesday (5/27)
-> > > > > > > Assignments - return API how-to for cost, duration, distance for Google APIs
-
-1.  Google Maps API - Daniel & Adrian
-2.  Google Distance Matrix - Marlon & Diane (hint: shortest vs quickest route) + OpenWeather
-    https://developers.google.com/maps/documentation/distance-matrix/start
-3.  All to review OpenWeather and come with ideas for storyboarding
-
-- Note: use google to scrape this data instead of using Lyft and Uber APIs or use Google APIs to get their data.
-
-Other Research Projects - slack if you are working on any of theses projects
-
-- Method for calculating cost, duration, distance for bikes
-- Modals - research as replacement for alerts
-- Review Project Plan guidelines found in Antonio's Presentation
-
-Goal: Target MVP on Monday (Jun1), Final Presentation Tuesday (Jun9)
-
-\***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\***API DATA\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***\_\_\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***
-[x] Google Maps & Distance Matrix API - AIzaSyAHeXe0OoBIReOvCuEJq5cnU3LhVahYTAk
-https://cloud.google.com/maps-platform/pricing/?_ga=2.155047547.279856015.1590455942-678168021.1590455942
-(\$300 credit for 1 year to trial)
-[] Uber API same key as Lyft - all from Rapid - REQUIRES TOKEN
-(product info, est price range, missing duration)
-(https://developer.uber.com/docs/riders/references/api)
-[] Lyft API 422d5dfd16mshf1d3696de0ce7f2p15e944jsn410117f8544f
-https://rapidapi.com/volodimir.kudriachenko/api/Lyft? endpoint=apiendpoint_d6a90130-f966-11e7-aa9e-7fdbe96fd9e9estimateRideCost
-(estimateRideCost)(free API but requires join Dev Group)
-(https://rapidapi.com/volodimir.kudriachenko/api/Lyft)
-[] Socrata (bikes) API
-https://dev.socrata.com/foundry/data.edmonton.ca/vq44-ni9f/embed
-[] (BBikeRadar API (MM requested 5/25/20) - no updates 5/28
-[x](Back-up) CityBikes 422d5dfd16mshf1d3696de0ce7f2p15e944jsn410117f8544f
-(https://rapidapi.com/eskerda/api/citybikes)(free, unlimited) (#bikes/city)
-[x] Open Weather API - b71526ae83f488d396f36bb43cb91ffb
-(https://home.openweathermap.org/api_keys)
-(DC gen w/name destinATX, free 1,000,000 calls/mo)
-
-[x] (Back-up API for Maps) Here API ID “GXUq1dnJm5xYLW7Gksmj”
-API Key 9KP26Lrxitj2R0Hj_fEmFwn5ftZtatAENiYP2nEuOyc
-ACCESS KEY ID 3M0Ddq9m9sa6NaHS4DdhTg
-ACCESS KEY SECRET \_cctW6WTyrCzgk3ZTD3LCrkAIYoUI8jhGGff5HKy3BLSvNBDQ5OWHi5HTM5lNLxaP74TYa9AaGJ_rzcKQp92fQ
-(Here is a Google Maps alternate, directions API from Google, uses Waypoints) -
-(https://developer.here.com/projects/PROD-fbe8199f-2fc7-431d-8c81-cd9e4d993b2a)
-(MM gen w/gmail, free 250,000 transactions, 5,000 active users)
-
-[x] (Tom Tom) Tom Tom for Developers API Key Diane: "XtB6o1P3oK26pkTlsOCQelb1GGQuynnX"
-
-[x] (Transit App API Key) Transit Feeds API KEY Marlon "f1d3b41e-a4aa-4d0f-87e2-377e33994b1d"
-API KEY Adrian "ac61515c-ef4d-4016-af3b-4c297d46812f"
-API KEY Diane "9d384e5c-a97e-4251-8836-5a03c1f05ed1"
-How to use: Get to the Documentation and you will have access to API LOCATIONS & API FEED
-
-[x] (CapMetro Austin) Service Alerts, Trip Updates, Vehicle Positions "https://data.austintexas.gov/browse?q=json&sortBy=relevance"
-
-[x](YELP) Yelp API - FUSION API
-
-        API KEY Marlon
-        "LWQKKIC6WZLlwyI7-Pg9pE02R0wCWEQtyFS7Y3hPAu-PEbUHgvd9P9munA-Ozw5qz4XsU-RlmxcW9o8bzippVqsR-MUSpI5ZOeEs4J25asF8SJYQZZNbZFefcZPSXnYx"
-
-        Client ID Marlon
-        "DRXtVwhPGS5-Fc2NONIkQA"
-
-        Example Business ID: vLKgesyq-yEfpzeAFgPorQ
-
-        How to use: Once you have the key there is an instruction on how to obtain all the information by authenticating on postman using the Authentication tab next to parameters in MEDIUM.COM Article.
-        How to Guide here: https://medium.com/@schulte.robert/testing-yelp-api-requests-with-postman-f51450bbac83
-
-        Example used: To get data using the url I got the business ID from the Chrome INSPECT tool in the The Picnic Austin which is a food truck.
-        I pasted the Business Id: vLKgesyq-yEfpzeAFgPorQ to Postman after the Url https://api.yelp.com/v3/businesses/
-        got a response with all the information for selected food truck in JSON.
-
-        Remember to ADD parameters*** in our case it would be KEY : 'term' VALUE : 'foodtrucks' KEY : 'location' VALUE : 'austin'
-
-        Yelp Fusion API - "https://python.gotrained.com/yelp-fusion-api-tutorial/"
+General Lessons:
+- Time Management:  working in a group with varied schedules requires more planning, flexibility, and extra time.  Dividing tasks and defining roles is critical.  
+- Resolving Conflicts:  Best to solve conflicts on Zoom/Meet instead of through Slack.
+- Pair Coding:  Talking through pair coding requires practice and is more challenging to get into the coding zone.  Working through functions then coming together worked better than trying to co-create.
+- Creative Challenges:  Luckily there weren't many creative challenges.  Demonstrating pros and cons to various approaches meant more work upfront but better results while minimizing group stress.
+- Dividing Projects Upfront:  Fortunately early in the project a lead was defined for the primary deliverables.  Daily meetings helped all stay involved and feel like they were contributing to the project, regardless their depth of involvement in all of the areas.
+- Packaging the Project:  Leaving a day to finalize the deliverables, collect user input, dress up the presentation, polish the readme files, update code to ensure formatting proved very helpful.  They may not have been possible had the university not given the groups an extra class day.  Project due dates moved from Monday to Thursday.
+- Next time?  Add more lessons learned to the presentation. Work on creating a more dynamic Readme file.  Captured more input and make better use of the project matrix and phase review process.
 
 
+START HERE
 
-        https://www.yelp.com/developers/documentation/v3/business
-
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. list 
-  2. list
-     * With some
-     * Sub bullets
-</details>
-
-Username : GitHub
-Password : Github
 
 GitHub URL: https://destinatx.github.io/Project-1/
 GitHub: https://github.com/DestinATX/Project-1/settings
 
-- - - - - - - End of 5/26 Update \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
+**FoodTrucksATX**
 
-With these APIs user will be able to find the most affordable way to get to a desired destination in Austin.
-We recommend the user to use environmentally friendly vehicles on sunny days.
-The bike rates are estimated with google map data and the rates provided by the scooter rental companies.
+Designed for users of all ages to determine the available food trucks in the user&#39;s desired area of Austin, TX then allowing them to choose to walk, bike, take public transit, or drive based on their desired time to arrival.
+
+**User Stories**
+
+22 year old college student used this application on his laptop to find a food truck nearby. His first remark was, &quot;Oh wow, this looks more like a third project instead of a first project.&quot; He ended up driving to Yummy Thai on Rainey Street.
+
+**Acceptance Criteria**
+
+- Given I am within the City of Austin in search of a food truck, this application allows me to find options around town that I wish to target.
+- If I desire a particular type of food or cuisine, the FoodTrucksATX application allows me to search by food type with all results provided. If I desire to see all food trucks, regardless of food type, that should also be an option.
+- Given options to walk, bicycle, take public transit, or drive, I am able access directions that let me know how long my trip to the desired food truck will take and directions to find my way there.
+- Having an up to date weather report available allows me to make the best travel decision.
+- Then I expect the address, directions, map, duration of the trip, and few facts about the food truck I select.
+- After determining this application is helpful, having Linked-In information on the development team allows me to contact the group to find out what other applications may be available.
+
+**Bugs and Rabbit Holes**
+
+- Began defining &quot;destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX.
+- ![](RackMultipart20200613-4-1by8p4k_html_e9ad276f938936f.png)
+- Used geo-location API from the Google API library, because of the CORS error which forced using anywhere cors API; however, this did not yield the correct location but resolved the CORS error. To accomplish the intended goal, instead used the browser&#39;s HTML5 Geolocation feature along with the Maps JavaScript API.
+
+-
+
+- While Materialize offered some incredible tools for the project, it is challenging to work with when manipulating text and image alignment within themes and containers
+-
+
+![](RackMultipart20200613-4-1by8p4k_html_794ed694e0ae6991.png)Team had planned to have users search on how they wanted to travel, how long or distance to their destination, and what type of food. Time or duration required data storage and the team agreed this should be added to the nice to have. Alternatively, the &quot;time available&quot; section of the Search Screen became more of a flashy carousel of food choice ideas.
+
+ ![](RackMultipart20200613-4-1by8p4k_html_36ac53e2aed6a9c9.gif)
+
+![](RackMultipart20200613-4-1by8p4k_html_eb6fd6316291aa52.png)
+
+- T ![](RackMultipart20200613-4-1by8p4k_html_55595ceea2e63e5.png) he template literal was crucial to transferring food truck data to our cards. We transferred all data to our results div on the index.html page. The template literal allowed us to comfortably implement a for loop for all rendered food trucks dynamically displayed upon pressing search. Our data used on each card came from the Yelp Fusion API consisting of Name, Address, URL link, and Rating for each food truck. There is also a Direction button that combines with the Google Directions API to display steps to find routes for the user.
+
+**Resources and Tech Stack**
+
+Frontend:  _HTML, CSS, JavaScript, JQuery, AJAX, JSON_
+
+Tools_: Postman_
+
+APIs: _Google Maps JavaScript, Google Directions, CORS Anywhere Yelp, OpenWeather, CityBikes_
+
+_GitHub_ used to leverage project management, workflow, and application/file storage.
+
+**Team Management**
+
+![](RackMultipart20200613-4-1by8p4k_html_d40a1aed82bca68d.gif) ![](RackMultipart20200613-4-1by8p4k_html_69f4a4e3414ef099.jpg) **Adrian Palacios**
+
+_Full-Stack Engineer_
+
+![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/adrian-palacios-centraltexas/
+
+[![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:adrianpalacios33@yahoo.com)adrianpalacios33@yahoo.com [![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(956)%20252-7270)(956) 252-7270
+
+![](RackMultipart20200613-4-1by8p4k_html_da23e1470fcb6ecf.jpg)
+
+![](RackMultipart20200613-4-1by8p4k_html_1a893e42ad17e71.jpg)Changyeon (Daniel) Hong
+
+_Full-Stack Engineer_
+
+![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/changyeon-hong-centraltexas/
+
+[![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:hongchangyeon@gmail.com)hongchangyeon@gmail.com[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)%20218-3825)(737)218-3825
+
+**Diane Candler**
+
+_Full-Stack Engineer_
+
+![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/diane-candler-centraltexas/
+
+[![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:dianedcandler@gmail.com)[dianedcandler@gmail.com](mailto:dianedcandler@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(512)%20964-9473) (512)964-9473
+
+**Marlon Mora**
+
+_Full-Stack Engineer_
+
+![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/dmarlon-mora-centraltexas/
+
+![](RackMultipart20200613-4-1by8p4k_html_ab3ef628e8fb2c92.gif)[marlonmora.ndr@gmail.com](mailto:marlonmora.ndr@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)-218-3825)(929)2296136
+
+Review the team&#39;s work on our GitHub [https://github.com/DestinATX/Project-1](https://github.com/DestinATX/Project-1)
+
+Or URL [https://destinatx.github.io/Project-1/](https://destinatx.github.io/Project-1/)
+
+**Demo**
+
+Screen Shots – use Zoom to video
+
+**Phase Review**
+
+|
+ | Description | Status |
+ |
+| --- | --- | --- | --- |
+| Phase 1 | Select APIs and high-level product description | Green | 5/28/20 |
+|
+ | Select new APIs and re-defined product | Moved out | 5/30/20 |
+|
+ | Psuedo Code, StoryBoard, FlowChart, Set Project Goals &amp; Responsibilities | Moved out complete 6/1 | 6/2 |
+|
+ | Define Welcome Page | Green | 6/1 |
+|
+ | Define Results and Selection Pages | Green | 6/1 |
+|
+ | Materialize Theme selection | Green | 6/2 |
+| Phase 2 | Psuedo Code – each API but divide into Yelp &amp; Directions – assign roles/responsibilities | Green | 6/4 |
+|
+ | Basic Materialize framework for project | Green | 6/4 |
+| Phase 3 | Get data flowing and filtered, | Moved due to UT, riots Yelp worked 6/46/7 complete | 6/4 |
+|
+ | Yelp API – target food truck by nameGoogle &amp; CORS – target map with Yelp API and load on map (radius, custom setting?) | 6/7 |
+| Phase 4 | Build HTML and CSS infrastructure using available data | Most finished 6/7 | 6/9 |
+| Phase 5 | Finalize user interface, tweak code to work as desired, work on Nice-to-Have | Delayed some due to time off | 6/10 |
+| Phase 6 | Package product, finalize deliverables, work on | Green | 6/11 |
+| Phase 7 | Work on final presentation, launch product | Green | 6/11 |
+
+**UI Design**
+
+Materialize inspiration
+
+![](RackMultipart20200613-4-1by8p4k_html_9e9c542689293f54.png)
+
+Storyboard
+
+Welcome Page
+
+![](RackMultipart20200613-4-1by8p4k_html_2cb201c2a12f710f.png)
+
+Results Page
+
+![](RackMultipart20200613-4-1by8p4k_html_3d25ddf8a0dd00d0.png)
+
+Solutions Page
+
+![](RackMultipart20200613-4-1by8p4k_html_8c912ee5b416df33.png)
+
+**Initial Flow Chart**
+
+![](RackMultipart20200613-4-1by8p4k_html_49ac0cb03196381.gif) ![](RackMultipart20200613-4-1by8p4k_html_4e58457414ee48b.png)
+
+Product FlowChart after modifications
+
+![](RackMultipart20200613-4-1by8p4k_html_4507b5cce3eb078d.png)
+
+**Google Maps API**
+
+_The Maps JavaScript API lets you customize maps with your own content and imagery for display on web pages and mobile devices._
+
+Google Directions API
+
+_With the Directions API, it is possible to access driving, cycling, walking and public transportation routing by using an HTTP request._
+
+**Yelps API**
+
+Short description
+
+**cors-anywhere**
+
+This API enables cross-origin requests to anywhere.
+
+**Release 2.0**
+
+Enhancements we want to see in the next version:
+
+- Add API links to enhance bike data
+- Add GEO Location
+- Add Food Truck attributes such as rating, reviews, menus, etc.
+
+**Lessons Learned**
+
+**Time Management:** working in a group with varied schedules requires more planning, flexibility, and extra time. Dividing tasks and defining roles is critical.
+
+**Resolving Conflicts:** Best to solve conflicts using Zoom/Meet instead of through Slack.
+
+**Pair Coding:** Talking through pair coding requires practice and is more challenging to get into the coding zone. Working through different functions then coming together to pull them together worked better than trying to co-create.
+
+**Creative Challenges:** Luckily these were easily managed. Demonstrating pros and cons to various approaches meant more work upfront for the design team but better results while minimizing group stress. Feature creep seemed to pop up as the program came closer to working as intended. For example a discussion to add a second page versus pushing data into another area on the same page came up with 2-3 days left in the project and would have pushed design to the final day while leaving very little time to package the product.
+
+**Defining Roles &amp; Responsibilities:** Fortunately, early in the project a lead was defined or emerges for the primary deliverables. Daily meetings helped all stay involved and feeling like they were contributing to the whole project, regardless their depth of involvement in any one area.
+
+**Packaging the Project:** Leaving a day to finalize the deliverables, collect user input, dress up the presentation, polish the readme files, update code to ensure formatting, etc. proved immensely helpful. This may not have been possible had UT moved the delivery date from Monday to Thursday. Having a flowchart and storyboard proved extremely helpful and kept feature creep at bay.
+
+**Valuable lessons:** Planning out our project was instrumental in our success. We decided to create a food truck search for the city of Austin. This decision was based on two objectives. One, to capture the food truck spirit in the Austin community and second, to secure well rounded understanding of the data that we would display based on the time given to complete this Project. This course of action proved beneficial to our goal of creating a straightforward practical product that would benefit our userbase in Austin while creating enough time to evaluate our data for public use.
+
+**Next time:** Add more lessons learned to the presentation. Work on creating a more dynamic Readme.md file. Capture more input and make better use of the project matrix and formally document the phase review.
+
+![](RackMultipart20200613-4-1by8p4k_html_96bb7782cea657c0.png)
