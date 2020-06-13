@@ -251,14 +251,14 @@ Materialize inspiration
 ![](RackMultipart20200613-4-1by8p4k_html_9e9c542689293f54.png)
 
 Storyboard
-
+![Welcome Page Storyboard](./assets/images/storyboardPg1.PNG)
 Welcome Page
 
-![](RackMultipart20200613-4-1by8p4k_html_2cb201c2a12f710f.png)
+![Results Page Storyboard](./assets/images/storyboardPg2.PNG)
 
 Results Page
 
-![](RackMultipart20200613-4-1by8p4k_html_3d25ddf8a0dd00d0.png)
+![Selection Page Storyboard](./assets/images/storyboardPg3.PNG)
 
 Solutions Page
 
