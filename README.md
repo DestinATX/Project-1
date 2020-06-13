@@ -218,32 +218,7 @@ Screen Shots – use Zoom to video
 
 **Phase Review**
 
-|
- | Description | Status |
- |
-| --- | --- | --- | --- |
-| Phase 1 | Select APIs and high-level product description | Green | 5/28/20 |
-|
- | Select new APIs and re-defined product | Moved out | 5/30/20 |
-|
- | Psuedo Code, StoryBoard, FlowChart, Set Project Goals &amp; Responsibilities | Moved out complete 6/1 | 6/2 |
-|
- | Define Welcome Page | Green | 6/1 |
-|
- | Define Results and Selection Pages | Green | 6/1 |
-|
- | Materialize Theme selection | Green | 6/2 |
-| Phase 2 | Psuedo Code – each API but divide into Yelp &amp; Directions – assign roles/responsibilities | Green | 6/4 |
-|
- | Basic Materialize framework for project | Green | 6/4 |
-| Phase 3 | Get data flowing and filtered, | Moved due to UT, riots Yelp worked 6/46/7 complete | 6/4 |
-|
- | Yelp API – target food truck by nameGoogle &amp; CORS – target map with Yelp API and load on map (radius, custom setting?) | 6/7 |
-| Phase 4 | Build HTML and CSS infrastructure using available data | Most finished 6/7 | 6/9 |
-| Phase 5 | Finalize user interface, tweak code to work as desired, work on Nice-to-Have | Delayed some due to time off | 6/10 |
-| Phase 6 | Package product, finalize deliverables, work on | Green | 6/11 |
-| Phase 7 | Work on final presentation, launch product | Green | 6/11 |
-
+|![Phase Review](./assets/images/projectTable.PNG)
 **UI Design**
 
 Materialize inspiration
