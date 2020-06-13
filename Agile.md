@@ -151,3 +151,21 @@ ____________________________API DATA____________________________________________
 GitHub URL:  https://destinatx.github.io/Project-1/
 GitHub:  https://github.com/DestinATX/Project-1/settings
 
+Projects
+[x] Set-up Materialize framework - Wed 6/3  Adrian & Diane
+[x] search bar - Fri 6/5 
+[x] Yelp API - Wed 6/3 Marlon lead
+[x] Google API - Thu 6/4 Daniel lead
+[x]  Put markers and show directions on map Sat 6/6
+[x]  Logo, name, color palette - Fri 6/5
+[x]  Food input request - Fri 6/5
+[x]  Food search - Fri 6/5
+[x]  Weather - Sat 6/6
+[x]  Trans - Walk - Sat 6/6
+[x]  Trans - Bike - Sat 6/6
+[x]  Trans - public - Sat 6/6
+[x]  Trans - Car - Sat 6/6
+[x] Geo Location - Sun 6/7
+[x]  Look and Feel UI - Sun 6/7
+[x]  Readme work - Sun 6/7
+[x]  Presentation and Clean-up - Mon 6/8 
