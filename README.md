@@ -7,8 +7,11 @@ GitHub: https://github.com/DestinATX/Project-1/settings
 
 Designed for users of all ages to determine the available food trucks in the user&#39;s desired area of Austin, TX then allowing them to choose to walk, bike, take public transit, or drive based on their desired time to arrival.
 
-**User Stories**
+**User Comments**
 22 year old college student used this application on his laptop to find a food truck nearby. His first remark was, &quot;Oh wow, this looks more like a third project instead of a first project.&quot; He ended up driving to Yummy Thai on Rainey Street.
+
+“Its so nice out I really want to drive but get some food somewhere thats not a restaurant, Wow let me try FoodTruckATX it will probably get me something yummy”
+
 **User Input Video**   ![UserVideo](./assets/images/Media1.mp4)
 
 **Acceptance Criteria**
