@@ -48,25 +48,26 @@ _GitHub_ used to leverage project management, workflow, and application/file sto
 
 **Team Management**
 
-**Adrian Palacios**  _Full-Stack Engineer_
-|![Adrian Palacios](./assets/images/Adrian.jpg)
+|![Adrian Palacios](./assets/images/Adrian.jpg)  **Adrian Palacios**  _Full-Stack Engineer_
+
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/adrian-palacios-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:adrianpalacios33@yahoo.com)adrianpalacios33@yahoo.com [![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(956)%20252-7270)(956) 252-7270
 ![](RackMultipart20200613-4-1by8p4k_html_da23e1470fcb6ecf.jpg)
 
 
-**Changyeon (Daniel) Hong** _Full-Stack Engineer_
-|![Daniel Hong](./assets/images/Daniel.jpg)
+|![Daniel Hong](./assets/images/Daniel.jpg)  **Changyeon (Daniel) Hong** _Full-Stack Engineer_
+
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/changyeon-hong-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:hongchangyeon@gmail.com)hongchangyeon@gmail.com[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)%20218-3825)(737)218-3825
 
-**Diane Candler** _Full-Stack Engineer_
-|![Diane Candler](./assets/images/Diane.jpg)
+
+|![Diane Candler](./assets/images/Diane.jpg)  **Diane Candler** _Full-Stack Engineer_
+
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/diane-candler-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:dianedcandler@gmail.com)[dianedcandler@gmail.com](mailto:dianedcandler@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(512)%20964-9473) (512)964-9473
 
-**Marlon Mora** _Full-Stack Engineer_
-|![Marlon Mora](./assets/images/Marlo.jpg)
+|![Marlon Mora](./assets/images/Marlo.jpg)  **Marlon Mora** _Full-Stack Engineer_
+
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/dmarlon-mora-centraltexas/
 ![](RackMultipart20200613-4-1by8p4k_html_ab3ef628e8fb2c92.gif)[marlonmora.ndr@gmail.com](mailto:marlonmora.ndr@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)-218-3825)(929)2296136
 
