@@ -1,4 +1,8 @@
-6/8/20
+6/12/20 Met and updated Agile.md and ReadMe.md files.
+6/11/20 Powerpoint created and preped for presentation for demo.
+6/10/20 (Wednesday) Direction calculator and displaying routes were fullying debugged. Final touch on the page layout appearance. 
+6/9/20 (Tuesday) Changed three panel layouts. Replaced timer panel with picture carousel. Buttons were created for travel mode. Added more footer data.
+6/8/20 (Monday) Met and discussed about the changes in the page lay outs. Google Maps API was not cooperating. Cards were generated with data from YELP API.
 6/7/20 (Sunday)  Met to review progress and discuss next steps. Weather APIs are working. Google maps with food truck flags are working.  Worked on linking Yelp and Google and HTML.  Sorted branches and made some progress on footer/header linking. 
 6/4/20 (Thursday)  UT called off class and recommended time for students due to unrest/riots in Austin.  Team met during class time to sync on progress and make plans for the weekend.  Updated timeline and project list.  Some progress made on updating Readme with more details.  Almost finished with changes to storyboard.  Discussed JavaScript sync requirements with HTML and how to handle pair coding, alignment of roles and responsibilities.  Group is working well as a team.
 6/3/20 (Wednesday)  Basic HTML framework completed. CORs-anywhere proxy for Google working. Added Project cards and merged branches.  
