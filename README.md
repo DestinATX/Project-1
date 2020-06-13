@@ -46,7 +46,7 @@ Designed for users of all ages to determine the available food trucks in the use
 
 **Resources and Tech Stack**
 
-Frontend:  _HTML, CSS, JavaScript, JQuery, AJAX, JSON_
+Frontend:  _HTML, JavaScript, JQuery, AJAX, JSON, Pure CSS , Material UI (MUI)/Materalize - (google)_
 
 Tools_: Postman_
 
