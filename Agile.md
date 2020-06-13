@@ -1,3 +1,4 @@
+6/8/20
 6/7/20 (Sunday)  Met to review progress and discuss next steps. Weather APIs are working. Google maps with food truck flags are working.  Worked on linking Yelp and Google and HTML.  Sorted branches and made some progress on footer/header linking. 
 6/4/20 (Thursday)  UT called off class and recommended time for students due to unrest/riots in Austin.  Team met during class time to sync on progress and make plans for the weekend.  Updated timeline and project list.  Some progress made on updating Readme with more details.  Almost finished with changes to storyboard.  Discussed JavaScript sync requirements with HTML and how to handle pair coding, alignment of roles and responsibilities.  Group is working well as a team.
 6/3/20 (Wednesday)  Basic HTML framework completed. CORs-anywhere proxy for Google working. Added Project cards and merged branches.  

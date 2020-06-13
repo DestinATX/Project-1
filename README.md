@@ -221,51 +221,36 @@ Screen Shots – use Zoom to video
 |![Phase Review](./assets/images/projectTable.PNG)
 **UI Design**
 
-Materialize inspiration
+**Materialize inspiration**
+|![Materialize inspiration](./assets/images/MaterializeInspire.PNG)
 
-![](RackMultipart20200613-4-1by8p4k_html_9e9c542689293f54.png)
 
 Storyboard
 ![Welcome Page Storyboard](./assets/images/storyboardPg1.PNG)
 Welcome Page
-
 ![Results Page Storyboard](./assets/images/storyboardPg2.PNG)
-
 Results Page
-
 ![Selection Page Storyboard](./assets/images/storyboardPg3.PNG)
-
 Solutions Page
 
-![](RackMultipart20200613-4-1by8p4k_html_8c912ee5b416df33.png)
 
-**Initial Flow Chart**
-
-![](RackMultipart20200613-4-1by8p4k_html_49ac0cb03196381.gif) ![](RackMultipart20200613-4-1by8p4k_html_4e58457414ee48b.png)
-
-Product FlowChart after modifications
-
-![](RackMultipart20200613-4-1by8p4k_html_4507b5cce3eb078d.png)
+**Modified Flow Chart**
+![Selection Page Storyboard](./assets/images/newFlowchart.PNG)
 
 **Google Maps API**
-
 _The Maps JavaScript API lets you customize maps with your own content and imagery for display on web pages and mobile devices._
 
-Google Directions API
-
+**Google Directions API**
 _With the Directions API, it is possible to access driving, cycling, walking and public transportation routing by using an HTTP request._
 
 **Yelps API**
-
-Short description
+_Used to source all of the Austin food trucks and attributes such as name, price range, rating, location, foot type, etc._
 
 **cors-anywhere**
-
-This API enables cross-origin requests to anywhere.
+_This API enables cross-origin requests to anywhere._
 
 **Release 2.0**
-
-Enhancements we want to see in the next version:
+_Enhancements we want to see in the next version:_
 
 - Add API links to enhance bike data
 - Add GEO Location
@@ -288,5 +273,3 @@ Enhancements we want to see in the next version:
 **Valuable lessons:** Planning out our project was instrumental in our success. We decided to create a food truck search for the city of Austin. This decision was based on two objectives. One, to capture the food truck spirit in the Austin community and second, to secure well rounded understanding of the data that we would display based on the time given to complete this Project. This course of action proved beneficial to our goal of creating a straightforward practical product that would benefit our userbase in Austin while creating enough time to evaluate our data for public use.
 
 **Next time:** Add more lessons learned to the presentation. Work on creating a more dynamic Readme.md file. Capture more input and make better use of the project matrix and formally document the phase review.
-
-![](RackMultipart20200613-4-1by8p4k_html_96bb7782cea657c0.png)
