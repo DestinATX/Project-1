@@ -9,8 +9,7 @@ Designed for users of all ages to determine the available food trucks in the use
 
 **User Stories**
 22 year old college student used this application on his laptop to find a food truck nearby. His first remark was, &quot;Oh wow, this looks more like a third project instead of a first project.&quot; He ended up driving to Yummy Thai on Rainey Street.
-**User Input Video**
-![UserVideo](./assets/images/Media1.mp4)
+**User Input Video**   ![UserVideo](./assets/images/Media1.mp4)
 
 **Acceptance Criteria**
 - Given I am within the City of Austin in search of a food truck, this application allows me to find options around town that I wish to target.
@@ -22,17 +21,24 @@ Designed for users of all ages to determine the available food trucks in the use
 
 **Bugs and Rabbit Holes**
 - Began defining &quot;destinATX, a transportation application but after several days were not able to gain access to Uber and Lyft APIs so redirected efforts to focus on FoodTrucksATX.
-- ![](RackMultipart20200613-4-1by8p4k_html_e9ad276f938936f.png)
 - Used geo-location API from the Google API library, because of the CORS error which forced using anywhere cors API; however, this did not yield the correct location but resolved the CORS error. To accomplish the intended goal, instead used the browser&#39;s HTML5 Geolocation feature along with the Maps JavaScript API.
 - While Materialize offered some incredible tools for the project, it is challenging to work with when manipulating text and image alignment within themes and containers
 - Team had planned to have users search on how they wanted to travel, how long or distance to their destination, and what type of food. Time or duration required data storage and the team agreed this should be added to the nice to have. Alternatively, the &quot;time available&quot; section of the Search Screen became more of a flashy carousel of food choice ideas.
 
 **Examples of Code**
-|![Route Calculator](./assets/images/Directions.PNG) **Route Calculator**
-**Geolocation** |![Route Calculator](./assets/images/GeoLocation.PNG)
-|![Template Literal](./assets/images/TemplateLiteral.PNG) **Template Literal**
+
+|![Route Calculator](./assets/images/Directions.PNG) 
+**Route Calculator**
+
+|![Route Calculator](./assets/images/GeoLocation.PNG)
+**Geolocation** 
+
+|![Template Literal](./assets/images/TemplateLiteral.PNG) 
+**Template Literal**
 - The template literal was crucial to transferring food truck data to our cards. We transferred all data to our results div on the index.html page. The template literal allowed us to comfortably implement a for loop for all rendered food trucks dynamically displayed upon pressing search. Our data used on each card came from the Yelp Fusion API consisting of Name, Address, URL link, and Rating for each food truck. There is also a Direction button that combines with the Google Directions API to display steps to find routes for the user.
-**Yelp API** |![Route Calculator](./assets/images/YelpAPI.PNG)
+
+|![Route Calculator](./assets/images/YelpAPI.PNG)
+**Yelp API** 
 
 **Resources and Tech Stack**
 Frontend:  _HTML, CSS, JavaScript, JQuery, AJAX, JSON_
@@ -43,24 +49,24 @@ _GitHub_ used to leverage project management, workflow, and application/file sto
 **Team Management**
 
 **Adrian Palacios**  _Full-Stack Engineer_
-|![Adrian Palacios](./assets/images/Adrian.PNG)
+|![Adrian Palacios](./assets/images/Adrian.jpg)
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/adrian-palacios-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:adrianpalacios33@yahoo.com)adrianpalacios33@yahoo.com [![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(956)%20252-7270)(956) 252-7270
 ![](RackMultipart20200613-4-1by8p4k_html_da23e1470fcb6ecf.jpg)
 
 
 **Changyeon (Daniel) Hong** _Full-Stack Engineer_
-|![Daniel Hong](./assets/images/Daniel.PNG)
+|![Daniel Hong](./assets/images/Daniel.jpg)
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/changyeon-hong-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:hongchangyeon@gmail.com)hongchangyeon@gmail.com[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)%20218-3825)(737)218-3825
 
 **Diane Candler** _Full-Stack Engineer_
-|![Diane Candler](./assets/images/Diane.PNG)
+|![Diane Candler](./assets/images/Diane.jpg)
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/diane-candler-centraltexas/
 [![](RackMultipart20200613-4-1by8p4k_html_fa5cf0c4a598c685.jpg)](mailto:dianedcandler@gmail.com)[dianedcandler@gmail.com](mailto:dianedcandler@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(512)%20964-9473) (512)964-9473
 
 **Marlon Mora** _Full-Stack Engineer_
-|![Marlon Mora](./assets/images/Marlo.PNG)
+|![Marlon Mora](./assets/images/Marlo.jpg)
 ![](RackMultipart20200613-4-1by8p4k_html_1bd476007cfd8b79.gif)linkedin.com/in/dmarlon-mora-centraltexas/
 ![](RackMultipart20200613-4-1by8p4k_html_ab3ef628e8fb2c92.gif)[marlonmora.ndr@gmail.com](mailto:marlonmora.ndr@gmail.com)[![](RackMultipart20200613-4-1by8p4k_html_1c5d5f1fcf0821b2.jpg)](/C:%5CUsers%5Cdiane%5COneDrive%5CDocuments%5CUT%5CProject-1%5C(737)-218-3825)(929)2296136
 
@@ -78,20 +84,36 @@ Or URL [https://destinatx.github.io/Project-1/](https://destinatx.github.io/Proj
 ![Welcome Page Storyboard](./assets/images/storyboardPg1.PNG)
 Welcome Page
 ![Results Page Storyboard](./assets/images/storyboardPg2.PNG)
-Results Page
+
 ![Selection Page Storyboard](./assets/images/storyboardPg3.PNG)
-Solutions Page
+
 
 **Initial Flow Chart**
+
 ![Initial Flowchart](./assets/images/FlowChart1.PNG)
+
 **Modified Flow Chart**
+
 ![Selection Page Storyboard](./assets/images/newFlowchart.PNG)
 
 **UI Design**
+
+**Welcome Page**
+
 |![Phase Review](./assets/images/SearchApp.PNG)
+
+**Results Page**
+
 |![Phase Review](./assets/images/ResultsApp.PNG)
+
+**Selection Page**
+
 |![Phase Review](./assets/images/DirectionsApp.PNG)
+
+**Developers, About, Footer w/Linked-In hyperlinks**
+
 |![Phase Review](./assets/images/DesignTeamApp.PNG)
+
 
 **Google Maps API**
 _The Maps JavaScript API lets you customize maps with your own content and imagery for display on web pages and mobile devices._
