@@ -198,15 +198,7 @@ How to use: Get to the Documentation and you will have access to API LOCATIONS &
 
         https://www.yelp.com/developers/documentation/v3/business
 
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. list 
-  2. list
-     * With some
-     * Sub bullets
-</details>
+
 
 Username : GitHub
 Password : Github
